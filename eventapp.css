@@ -1,0 +1,45 @@
+#sidebar, #relImages {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(160, 231, 219);
+  }
+
+  #mainArea{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(245, 244, 190);
+  }
+
+  #header, #results {
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  header {
+    font-family: 'Monoton', cursive;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px rgb(18, 201, 233);}
+}
+
+#blankbox {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(160, 231, 219);
+    height: 3px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column-desc, .column-descImg {
+    float: left;
+    width: 50%;
+  }
