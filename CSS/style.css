@@ -1,0 +1,7 @@
+h1 {
+    font-family: monoton; cursive;
+    animation: mymove 5s infinite;
+  }
+  @keyframes mymove {
+    50% {text-shadow: 10px 20px 30px blue;}
+  }
