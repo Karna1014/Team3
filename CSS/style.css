@@ -5,3 +5,7 @@ h1 {
   @keyframes mymove {
     50% {text-shadow: 10px 20px 30px blue;}
   }
+
+  #siteInfo {
+
+  }
