@@ -6,6 +6,15 @@ h1 {
     50% {text-shadow: 10px 20px 30px blue;}
   }
 
-  #siteInfo {
+  h5 {
+      margin-left: 15px;
+      margin-top: 25px;
+      margin-right: 15px;
+      margin-bottom: 25px;
+
+  }
+
+  .active {
+      padding-bottom: 15px;
 
   }
