@@ -5,8 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link type="text/css" rel="stylesheet" href="CSS/material.css"  media="screen,projection"/>
         <link rel="stylesheet" href="eventapp.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
         <link href="https://fonts.googleapis.com/css?family=Monoton|Righteous|Shadows+Into+Light&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     </head>
     <header><h1 id="title" align="center">Eventbrite &nbsp; Knockoff</h1></header>
     <h5 id="subtitle" align="center">The perfect adventure awaits you.</h5>
@@ -42,6 +47,7 @@
                         </div>
                     </div>
                     
+
                     <div>
                         <div class="col s12">
                             <div class="button">
@@ -53,8 +59,36 @@
                    
             </div>
 
+
                 <div id="results"></div>
                 <br>
+
+
+                <div>
+                    <h5 align="center" id="results"></h5>
+                    <p class="e_title"> Events Title: <span id="e_title"> </span> </p>
+                    <p class="e_location"> Events Location: <span id="e_location"> </span></p>
+                    <p class="e_date"> Events Date: <span id="e_date"> </span></p>
+                    <hr>
+                <!-- <div class="row">
+                    <div class="column-desc">Detailed description <span id="desc"</div>
+                    <div class="column-descImg">Image or GIF.</div>
+        
+                </div>
+            </div> -->
+                
+        </div>
+        
+        </div>
+    
+    <div class="col s3" id="relImages"><h5 align="center" id="header">Related Images</h5>
+            <!-- Related images will be dynamically added here. -->
+            <p align="center">Placeholder</p>
+        </div>
+
+                  
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="events.js"></script>  
 
         </div>
 
@@ -68,5 +102,6 @@
         <script src="events.js"></script>
                     
         <script type="text/javascript" src="materialize.js"></script>
+
     </body>
 </html>
