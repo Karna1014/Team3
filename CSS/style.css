@@ -1,7 +1,57 @@
+  *  {
+    box-sizing: border-box;
+  }
+
+body {
+  background: url(/Team3/Assets/cork-board.png);
+  /* background-size: cover;
+  -moz-background-size: cover;
+  z-index: -99;
+  width: 100%;
+  height: 100vh; */
+
+}
 h1 {
     font-family: monoton; cursive;
-    animation: mymove 5s infinite;
+    animation: mymove 3s infinite;
+    color: #ffffff;
   }
   @keyframes mymove {
-    50% {text-shadow: 10px 20px 30px blue;}
+    50% {text-shadow: 10px 20px 30px rgb(0, 255, 234);}
   }
+
+  h5 {
+      margin-left: 15px;
+      margin-top: 25px;
+      margin-right: 15px;
+      margin-bottom: 25px;
+
+  }
+
+  .active {
+      padding-bottom: 15px;
+
+  }
+
+  
+    
+  #landingImg1:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    z-index: 3;
+  }
+  #landingImg2:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    z-index: 3;
+  }
+
+  #landingImg3:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    z-index: 3;
+  }
+
