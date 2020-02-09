@@ -1,14 +1,22 @@
+body {
+  background-image: url('css/background.jpg');
+  background-size: cover;
+}
+
 #sidebar, #relImages {
     float: left;
     width: 25%;
     height: 100%;
-    background-color: rgb(160, 231, 219);
+    background-color: rgb(99, 203, 211);
   }
 
   #mainArea{
     float: left;
     width: 50%;
     height: 100%;
+    border: 1px solid black;
+     outline-style: inset;
+     outline-color: yellow;
     background-color: rgb(245, 244, 190);
   }
 
@@ -16,9 +24,17 @@
     font-family: 'Shadows Into Light', cursive;
   }
 
-  header {
+  #subtitle {
+      font-family: 'Righteous', cursive;
+      padding: 0;
+      margin: 0 auto;
+  }
+
+
+  header, #title {
+    margin-bottom: 10px;
     font-family: 'Monoton', cursive;
-    animation: mymove 5s infinite;
+    animation: mymove 3s infinite;
 }
 
 @keyframes mymove {
@@ -42,4 +58,22 @@
   .column-desc, .column-descImg {
     float: left;
     width: 50%;
+  }
+
+  #return, #return2 {
+      padding: 20px;
+  }
+
+  .button {
+      text-align: center;
+  }
+
+  #submit {
+    text-align: center;
+    width: 110px;
+    height: 50px;
+    font-size: 17px;
+    font-family: 'Monoton', cursive;
+    color: whitesmoke;
+    
   }
