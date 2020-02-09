@@ -5,72 +5,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link type="text/css" rel="stylesheet" href="CSS/material.css"  media="screen,projection"/>
         <link rel="stylesheet" href="eventapp.css">
-        <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monoton|Righteous|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <header><h1 align="center">Eventbrite &nbsp; Knockoff</h1></header>
+    <header><h1 id="title" align="center">Eventbrite &nbsp; Knockoff</h1></header>
+    <h5 id="subtitle" align="center">The perfect adventure awaits you.</h5>
 <hr>
+
+
 
 <body>
 
         
 <div class="row">
-    <div class="col s3" id="sidebar"><h5 align="center" id="header">Recently Searched Items</h5>
+    <div class="col s3" id="sidebar"><h5 align="center" id="header">Recently Searched</h5>
         <!-- Recent searches will be dynamically added here. -->
             <p align="center">Placeholder</p al>
         </div>
 
-    <div class="col s6" id="mainArea"><h5 align="center" id="header">Tell Us What You Like!</h5>
+    <div class="col s6 z-depth-4" id="mainArea"><h4 align="center" id="header"> <strong>The Magic Formula</strong></h4>
         <!-- USER INPUT FORM GOES HERE. -->
-                <div class="row">
-                    <form class="col s12">
+            <div class="row">
+                <form class="col s12">
                     <div class="row">
                         <div class="input-field col s6">
-                        <input id="location" type="text" class="validate">
-                        <label for="location">Where do you want to go?</label>
+                            <i class="material-icons prefix">palette</i>
+                            <input id="icon_palette" type="text" class="validate interests">
+                        <label for="icon_palette">Interest?</label>
                         <!-- add dropbox of choices? -->
                         </div>
                         <div class="input-field col s6">
-                        <input id=interests type="text" class="validate">
-                        <label for="interests">What are you interested in?</label>
+                            <i class="material-icons prefix">public</i>
+                            <input id="icon_public" type="text" class="validate location">
+                            <label for="icon_public">City?</label>
+                        
                         </div>
                     </div>
                     
-                    <div class="row">
-                        <div class="input-field col s12">
-                        <input id="date" type="datetime" class="validate">
-                        <label for="date">What date would you like to go?</label>
+                    <div>
+                        <div class="col s12">
+                            <div class="button">
+                                <button type = "button" id="submit" align="center" onclick="" class="btn btn-primary text-center">Submit!</button>
+                                </div>
                         </div>
                     </div>
-                    </form>
-                    <button id="submit" onclick="" class="btn btn-primary text-center">Submit!<Save/button>
-                </div>
+                </form>
+                   
+            </div>
 
                 <div id="results"></div>
+                <br>
 
-                <!-- <div>
-                    <h5 align="center" id="results">Let's Go! Check out the results below.</h5>
-                    <p class="e_title"> Events Title: <span id="e_title"> </span> </p>
-                    <p class="e_location"> Events Location: <span id="e_location"> </span></p>
-                    <p class="e_date"> Events Date: <span id="e_date"> </span></p>
-                    <hr>
-                <div class="row">
-                    <div class="column-desc">Detailed description <span id="desc"</div>
-                    <div class="column-descImg">Image or GIF.</div>
-        
-                </div>
-            </div> -->
-                
-        </div>
-        
-        </div>
-    
-    <div class="col s3" id="relImages"><h5 align="center" id="header">Related Images</h5>
-            <!-- Related images will be dynamically added here. -->
-            <p align="center">Placeholder</p>
         </div>
 
+    <div class="col s3" id="sidebar"><h5 align="center" id="header">Related Images</h5>
+            <!-- Related Images will be dynamically added here. -->
+                <p align="center">Placeholder</p al>
+            </div>
+
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>            
-        <script type="text/javascript" src="materialize.js"></script>
         <script src="events.js"></script>
+                    
+        <script type="text/javascript" src="materialize.js"></script>
     </body>
 </html>
