@@ -19,7 +19,8 @@ $(document).ready(function(){
         console.log(eventData);
     
 
-        
+        $("#results").empty();
+        // empties the results before appendinfg new information
         
         for(var i = 0; i < 20; i++) {
             var newDiv = $("<div>").data("id", i);
