@@ -6,6 +6,7 @@
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link rel="stylesheet" href="eventapp.css">
         <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <header><h1 align="center">Eventbrite &nbsp; Knockoff</h1></header>
 <hr>
@@ -35,12 +36,12 @@
                         </div>
                     </div>
                     
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="input-field col s12">
                         <input id="date" type="datetime" class="validate">
                         <label for="date">What date would you like to go?</label>
                         </div>
-                    </div>
+                    </div> -->
                     </form>
                     <button id="submit" onclick="" class="btn btn-primary text-center">Submit!<Save/button>
                 </div>
@@ -48,17 +49,17 @@
                 <div id="blankbox"></div>
 
                 <div>
-                    <h5 align="center" id="results">Let's Go! Check out the results below.</h5>
+                    <h5 align="center" id="results"></h5>
                     <p class="e_title"> Events Title: <span id="e_title"> </span> </p>
                     <p class="e_location"> Events Location: <span id="e_location"> </span></p>
                     <p class="e_date"> Events Date: <span id="e_date"> </span></p>
                     <hr>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="column-desc">Detailed description <span id="desc"</div>
                     <div class="column-descImg">Image or GIF.</div>
         
                 </div>
-            </div>
+            </div> -->
                 
         </div>
         
@@ -69,7 +70,8 @@
             <p align="center">Placeholder</p>
         </div>
 
-                    
+                  
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="events.js"></script>  
     </body>
 </html>

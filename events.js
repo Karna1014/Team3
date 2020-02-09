@@ -1,10 +1,10 @@
 $(document).ready(function(){
-    $("#search").on("click", function() {
+    $("#submit").on("click", function() {
     
     
     
-    var city = $("#firstInput").val();
-    var eventType = $("#secondInput").val();
+    var city = $("#location").val();
+    var eventType = $("#interests").val();
     
     
     var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
@@ -21,7 +21,7 @@ $(document).ready(function(){
         for(var i = 0; i < 20; i++) {
             var newDiv = $("<div>").data("id", i);
             newDiv.attr("class", "main-area").attr("id","mainArea");
-            $("#resultInput").append(newDiv);
+            $("#results").append(newDiv);
             var name = $("<h5>").text(eventData._embedded.events[i].name);
             var picLink = $("<a>").attr("href", eventData._embedded.events[i].url);
             var image = $("<img>").attr("src", eventData._embedded.events[i].images[0].url);
