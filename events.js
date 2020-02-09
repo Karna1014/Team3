@@ -1,10 +1,12 @@
 $(document).ready(function(){
     $("#submit").on("click", function() {
     
+
+
     
-    
-    var city = $("#location").val();
-    var eventType = $("#interests").val();
+    var city = $(".location").val();
+    var eventType = $(".interests").val();
+
     
     
     var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
@@ -16,6 +18,7 @@ $(document).ready(function(){
     }) .then(function(eventData){
         console.log(eventData);
     
+
         
         
         for(var i = 0; i < 20; i++) {
@@ -35,6 +38,7 @@ $(document).ready(function(){
             // newDiv.append(promoters);
             
             newDiv.append(name,promoters,date);
+
         }
     
     });
@@ -44,5 +48,6 @@ $(document).ready(function(){
             $(".resultInput").empty();
     
         });
+
     
     });
