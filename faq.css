@@ -1,0 +1,120 @@
+
+body{
+    margin: 0;
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: #9DC8E4;
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 60px;
+    margin: 50px 0 0;
+    color: #fff;
+}
+
+.main-container{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 70px 0 20px;
+    width: 100%;
+    
+}
+
+.faq h4{
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+
+}
+
+.questDetails{
+    background-color: #fff;
+    display: none;
+
+}
+
+.questContent {
+    padding: 15px;
+}
+
+.questDetails{
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.faq{
+    border-bottom: 1px solid #fff;
+}
+
+.faq h4:after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq.active h3:after{
+    content: '-';
+
+}
+
+/* here is the css for the navbar */
+
+.header_area .main-menu  .navbar-brand{
+    padding: 5px 1rem 0 1rem;
+  }
+  
+  .header_area .main-menu {
+    padding: 1rem 9rem;
+  }
+  .navbar{
+    margin-top: -15px;
+  }
+  
+  .header_area .main-menu .nav-item .nav-link{
+    font: normal ;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    color: whitesmoke;
+  }
+  
+  .header_area .main-menu .navbar-nav .active a{
+    background: darkorange;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .header_area .main-menu .navbar-nav a:hover{
+    color: brown;
+    
+  }
+  /* End Navigation */
+  
+  /* Start of the footer */
+  footer.footer-area .social h5{
+    font: normal 500 23px/30px;
+  }
+  
+  footer.footer-area .social a > i{
+    font-size: 22px;
+    padding: 2rem;
+    color: teal;
+    padding-top: 5px;
+  }
+  
+  footer.footer-area .social a:hover >i{
+    color: burlywood;
+  }
+  
+  /* End of the footer */
