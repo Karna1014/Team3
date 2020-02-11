@@ -3,6 +3,20 @@ body {
   background-size: cover;
 }
 
+.addInfo {
+    position:fixed;
+    height: 500px;
+    width: 650px;
+    border: 1px solid black;
+    outline-style: inset;
+    outline-color: yellow;
+    background-color: rgb(245, 244, 190);
+    text-align: center;
+    left: calc(50% - 325px);
+    top: calc(50% - 250px);
+}
+
+
 #sidebar, #relImages {
     float: left;
     width: 25%;
@@ -62,10 +76,13 @@ body {
     width: 50%;
   }
 
+  #map-image {
+    height: 250px;
 
+  }
   #events-image{
     height: 120px;
-    width: 120px;
+    /* width: 120px; */
     flex-direction: column;
     background-color: whitesmoke;
     border: 2px solid white;
