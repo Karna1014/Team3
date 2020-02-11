@@ -26,6 +26,9 @@
     <div class="col s3" id="sidebar"><h5 align="center" id="header">Recently Searched</h5>
         <!-- Recent searches will be dynamically added here. -->
             <p align="center">Placeholder</p al>
+                <ul id="searchList">
+
+                </ul>
         </div>
 
     <div class="col s6 z-depth-4" id="mainArea"><h4 align="center" id="header"> <strong>The Magic Formula</strong></h4>
@@ -34,15 +37,15 @@
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s6">
-                            <i class="material-icons prefix">palette</i>
+                            <i class="material-icons prefix" id="icon1">palette</i>
                             <input id="icon_palette" type="text" class="validate interests">
-                        <label for="icon_palette">Interest?</label>
+                        <label for="icon_palette" id="label1">Interest?</label>
                         <!-- add dropbox of choices? -->
                         </div>
                         <div class="input-field col s6">
-                            <i class="material-icons prefix">public</i>
+                            <i class="material-icons prefix" id="icon2">public</i>
                             <input id="icon_public" type="text" class="validate location">
-                            <label for="icon_public">City?</label>
+                            <label for="icon_public" id="label2">City?</label>
                         
                         </div>
                     </div>
@@ -76,8 +79,9 @@
         </div> -->
 
                   
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script src="events.js"></script>  
+        <script type="text/javascript" src="materialize.js"></script>
+        <script src="events.js"></script>
+        <script src="script.js"></script>  
 
         </div>
         

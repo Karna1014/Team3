@@ -8,7 +8,7 @@ $(document).ready(function(){
     var eventType = $(".interests").val();
 
     
-    
+
     var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
     
     console.log(queryURL);
