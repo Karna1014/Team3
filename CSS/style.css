@@ -12,7 +12,7 @@ body {
 
 }
 h1 {
-    font-family: monoton; cursive;
+    font-family: monoton; 
     animation: mymove 3s infinite;
     color: #ffffff;
   }
@@ -58,7 +58,59 @@ h1 {
     transform: scale(1.5); 
     z-index: 3;
   }
-  startBtn {
+  #startBtn {
     font-weight: bold;
   }
+
+/* here is the css for the navbar */
+
+.header_area .main-menu  .navbar-brand{
+  padding: 5px 1rem 0 1rem;
+}
+
+.header_area .main-menu {
+  padding: 1rem 9rem;
+}
+.navbar{
+  margin-top: -15px;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+  font: normal ;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  color: whitesmoke;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+  background: darkorange;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+  color: brown;
+  
+}
+/* End Navigation */
+
+/* Start of the footer */
+footer.footer-area .social h5{
+  font: normal 500 23px/30px;
+}
+
+footer.footer-area .social a > i{
+  font-size: 22px;
+  padding: 2rem;
+  color: teal;
+  padding-top: 5px;
+}
+
+footer.footer-area .social a:hover >i{
+  color: burlywood;
+}
+
+/* End of the footer */
+
 
