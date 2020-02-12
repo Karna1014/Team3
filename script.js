@@ -25,8 +25,8 @@ if(Img3E3 != null) {
 	});
 }
 
-var searchInfo = JSON.parse(localStorage.getItem("searchInfo"));
-if(searchInfo != null) {
+var searchInfo = JSON.parse(localStorage.getItem("searchInfo")) || []
+if(searchInfo.length) {
 	searchInfo.forEach(function(d) {
 		$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')">' + d.cityName + ' ' + d.eventType + '</li>');
 	});
@@ -36,8 +36,10 @@ $("#submit").on("click", function() {
     var cityName = uppercase($(".location").val());
     var typeOfEvent = uppercase($(".interests").val());
 	
+	
 	if (cityName != "" && typeOfEvent != "") {
 		populateResults(cityName, typeOfEvent);	
+		
 	}
 });
 
@@ -49,17 +51,10 @@ function populateResults(cityName, typeOfEvent) {
 
 function populateQueryHist(name, type) {
 	var itemToAdd = {"cityName": name, "eventType": type};
-	if (localStorage.getItem("searchInfo") === null) {
-	    var searchInfo = [];
-	    searchInfo.push(itemToAdd);
-  
-	    localStorage.setItem("searchInfo", JSON.stringify(searchInfo));
-	} else {
-	    var userInput = JSON.parse(localStorage.getItem("searchInfo"));
 		
 		console.log(name, type);
 		var valExist = false;
-		userInput.forEach(function(d) {
+		searchInfo.forEach(function(d) {
 			if(d.cityName === name && d.eventType === type) {
 				console.log(valExist);
 				valExist = true;
@@ -67,12 +62,13 @@ function populateQueryHist(name, type) {
 		});
 
 		if (valExist === false) {
-			userInput.push(itemToAdd);
+			searchInfo.push(itemToAdd);
+			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')">' + name + ' ' + type + '</li>');
 		}
 	
   
-	  localStorage.setItem("searchInfo", JSON.stringify(userInput));
-	}
+	  localStorage.setItem("searchInfo", JSON.stringify(searchInfo));
+	
   }
 function uppercase(cityName) {
     var array1 = cityName.split(' ');
@@ -98,20 +94,3 @@ function reSearch(cityName, eventType) {
 	$("#submit").trigger("click");
 }
 
-// function populateQueryHist(name, type) {
-//     var names = [];
-//     if (localStorage.getItem(type) === null) {
-//         names.push(name);
-//         console.log(name);
-//         localStorage.setItem(type, JSON.stringify(names));
-//     } else {
-//         // checking to make sure no repeat names on list while adding to list
-//         names = JSON.parse(localStorage.getItem(type));
-//         if (names.indexOf(name) === -1) {
-//             names.push(name);
-//         }
-
-//         localStorage.setItem(type, JSON.stringify(names));
-//         console.log(names);
-//     };
-// }
