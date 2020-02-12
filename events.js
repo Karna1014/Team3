@@ -101,6 +101,8 @@ $(document).ready(function(){
             $(".resultInput").empty();
     
     });
-
+    
     
     });
+
+    
