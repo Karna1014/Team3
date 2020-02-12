@@ -86,12 +86,15 @@ h1 {
   color: whitesmoke;
 }
 
+
 .header_area .main-menu .navbar-nav .active a{
   background: red;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+
 
 .header_area .main-menu .navbar-nav a:hover{
   color: red;
