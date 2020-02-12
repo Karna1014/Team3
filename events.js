@@ -1,11 +1,13 @@
 $(document).ready(function(){
 
+    // function to render map in div with class addInfo
     function createMap(mapQuestURL) {
         var newImg = $("<img>").attr("id", "map-image");
         newImg.attr("src", mapQuestURL);
         $(".addInfo").append(newImg);
     }
 
+    // on click event to render the results of the search
     $("#submit").on("click", function() {
     
 
@@ -60,7 +62,8 @@ $(document).ready(function(){
     
     });
     });
-    
+
+    // on click event to render the additional info Popup
     $("#results").on("click", "button", function(event) {
         console.log(event.target)
         if($(this).attr("type") === "info") {
@@ -79,15 +82,15 @@ $(document).ready(function(){
             var mapQuestURL = "https://www.mapquestapi.com/staticmap/v5/map?locations=" + locationCoordinates.lat + "," + locationCoordinates.lon + "&banner=" + bannerText + "&size=@2x&key=A492QA2ceege88RFFGEJJWQjU8t7Hcxm";
             $(".addInfoDiv").append(newInfoDiv);
             var infoName = $("<h4>").text(pageInfo[listIndex].name);
+            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X").attr("style", "float: right; margin: 1%; background-color: orange");
             var infoDescription = $("<p>").text(pageInfo[listIndex].description);
-            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X");
             var br = $("<br>");
-            newInfoDiv.append(infoName, infoDescription);
+            newInfoDiv.append(clearBtn, br, infoName, infoDescription);
             createMap(mapQuestURL);
-            newInfoDiv.append(br, clearBtn);
         }
     })
 
+    // on click event to remove the popup window
     $(".addInfoDiv").on("click", "button", function(event) {
         console.log(event.target)
         if($(this).attr("type") === "clear") {
@@ -97,10 +100,10 @@ $(document).ready(function(){
             
         }
     })
+
     $("#delete").on("click", function() {
             $(".resultInput").empty();
     
     });
 
-    
-    });
+});
