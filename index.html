@@ -19,8 +19,6 @@
 <!-------link to GoogleFonts-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-        <!-- link to bootstrap -->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> --> -->
     </head>
 
 
@@ -29,7 +27,7 @@
             <nav>
                 <div class="nav-wrapper nav #3f51b5 indigo nav z-depth-5">
                   <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventNav" style="margin: 10px;"></a>
-                  <ul id="nav-mobile" class="right logonav" style="float: right;">
+                  <ul id="nav-mobile" class="right logonav" style="float: right; font-size: 18px; font-weight: bold">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="eventapp.html">Events</a></li>
                     <li><a href="faq.html">Faq</a></li>
@@ -40,19 +38,17 @@
            
     <!--------End Header Area-------->
         <div class="container">
-            <header id= "KOhdr" class="opener center-align">
+            <header id= "KOhdr" class="opener center-align" style="margin-bottom: 40px;">
             <h1>Eventbrite<br>KnockOff</h1>
             </header>
         </div>
 
-        <div class="col s12">
-            <div class="card horizontal">
-                <div class="card-image" style="margin-top: 10px;">
-                    <img src="./Assets/eventsorg.jpg" class="img-responsive;" alt="About us" width="500" height="400px">
-                </div>
-                <div class="card-stacked">
-                <div class="card-content">
-                    <span class="card-title" style="margin-left: 15px; font-weight: bold;">Let Us Introduce Our App</span>
+        <div class="row">
+            <div class="container col l3">
+                <img src="./Assets/eventsorg.jpg" class="img-responsive;" alt="About us" style="width: 500px; height: 400px; margin-left: 40px; padding-right: 20px;">    
+            </div>
+            <div class="container col xl6 push-xl2 l4 push-l5 m12" style="margin-left: 10px;">
+                <span class="card-title" style="margin-left: 0px;  font-size: 25px; font-weight: bold;">Let Us Introduce Our App</span>
                     <h6 class="para">
                         Let's say you want to look for an event based your desired, our app is the best for your search and will give you directions on how to get there from your location using google map.
                     </h6>
@@ -62,66 +58,68 @@
                     <h6 class="para">
                         it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident
                     </h6>
-                </div>
-                </div>
             </div>
         </div>
-                    
+        
         
                    
 <!-- Start of the service area -->
-        <div class="row" id="svcStuff">
-            <div class="container col m3" id="svcBkt">
-              <div class="center-align img">
-                <img src="./Assets/music2.png" class="cardImg1" alt="services-1" height="50" width="50">
+        <section>
+            <div class="divider col m6"style="height: 5px;"></div>
+            <div class="row" id="svcStuff">
+                <div class="container col m3" id="svcBkt">
+                <div class="center-align img">
+                    <img src="./Assets/music2.png" class="cardImg1" alt="services-1" height="50" width="50">
+                </div>
+                <div class="center-align svcInfo" style="height: 250px;">
+                    <span class="svcTitle">Music</span>
+                    <p id="svcBlurb">A concert is a live music performance in front of an audience. 
+                        The performance may be by a single musician.</p>
+                    <a href="./eventapp.html" class="center-align btn-floating btn-large waves-effect waves-light red"><i class="material-icons">search</i></a>
+                </div>
             </div>
-            <div class="svcInfo" style="height: 250px;">
-                <span class="svcTitle">Music</span>
-                <p>A concert is a live music performance in front of an audience. 
-                    The performance may be by a single musician.</p>
-            </div>
-        </div>
 
-        <div class="row" id="svcStuff">
-            <div class="container col m3" id="svcBkt">
-              <div class="center-align img">
-                <img src="./Assets/sportcon2.png" class="cardImg2" alt="services-1" height="50" width="50">
+            <div class="row" id="svcStuff">
+                <div class="container col m3" id="svcBkt">
+                <div class="center-align img">
+                    <img src="./Assets/sportcon2.png" class="cardImg2" alt="services-1" height="50" width="50">
+                </div>
+                <div class="center-align svcInfo" style="height: 250px;">
+                    <span class="svcTitle">Sports</span>
+                    <p id="svcBlurb">Sporting event means any professional or 
+                        amateur sport, athletic game, contest, event,
+                        or race.</p>
+                        <a href="./eventapp.html" class="center-align btn-floating btn-large waves-effect waves-light red"><i class="material-icons">search</i></a>
+                </div>
             </div>
-            <div class="svcInfo" style="height: 250px;">
-                <span class="svcTitle">Sports</span>
-                <p>Sporting event means any professional or 
-                    amateur sport, athletic game, contest, event,
-                     or race.</p>
-            </div>
-        </div>
 
-        <div class="row" id="svcStuff">
-            <div class="container col m3" id="svcBkt">
-              <div class="center-align img">
-                <img src="./Assets/movie2.png" class="cardImg3" alt="services-1" height="50" width="50">
+            <div class="row" id="svcStuff">
+                <div class="container col m3" id="svcBkt">
+                <div class="center-align img">
+                    <img src="./Assets/movie2.png" class="cardImg3" alt="services-1" height="50" width="50">
+                </div>
+                <div class="center-align svcInfo" style="height: 250px;">
+                    <span class="svcTitle">Movies</span>
+                    <p id="svcBlurb">An event movie or event film is a blockbuster film whose 
+                        release itself is considered a major event.</p>
+                        <a href="./eventapp.html" class="center-align btn-floating btn-large waves-effect waves-light red"><i class="material-icons">search</i></a>
+                </div>
             </div>
-            <div class="svcInfo" style="height: 250px;">
-                <span class="svcTitle">Movies</span>
-                <p>An event movie or event film is a blockbuster film whose 
-                    release itself is considered a major event.</p>
-            </div>
-        </div>
 
-        <div class="row" id="svcStuff">
-            <div class="container col m3" id="svcBkt">
-              <div class="center-align img">
-                <img src="./Assets/education2.png" class="cardImg4" alt="services-1" height="50" width="50">
-            </div>
-            <div class="svcInfo" style=>
-                <span class="svcTitle">Education</span>
-                <p>Our educational events provide professionals
-                    with a targeted and flexible means to advance.</p>
-            </div>
-            </div>
-        </div>
-        
-
-         
+            <div class="row" id="svcStuff">
+                <div class="container col m3" id="svcBkt">
+                <div class="center-align img">
+                    <img src="./Assets/education2.png" class="cardImg4" alt="services-1" height="50" width="50">
+                </div>
+                <div class="center-align svcInfo" style="height: 250px;">
+                    <span class="svcTitle">Education</span>
+                    <p id="svcBlurb">Our educational events provide professionals
+                        with a targeted and flexible means to advance.</p>
+                        <a href="./eventapp.html" class="center-align btn-floating btn-large waves-effect waves-light red"><i class="material-icons">search</i></a>
+                </div>
+                </div>
+            </div> 
+        </section>   
  
   <!--------End services Area-------->
             
@@ -129,7 +127,7 @@
             <footer class="page-footer N/A transparent">
                 <div class="container col s12">
                     <div class="col s12 center-align">
-                      <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventFoot center-align" style="padding: 0px;"></a>
+                      <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventFoot center-align" style="padding-bottom: 10px;"></a>
                       <p class="black-text text-lighten-4 center-align" style="margin: 0px; padding-bottom: 5px; font-weight: bold;">FOLLOW US</p>
                     </div>
                     <div class="container col s12">
@@ -143,18 +141,19 @@
                     </div>
                 </div>
                 <div class="footer-copyright">
-                    <div class="container center-align" style="color: black; padding: 0px;">
+                    <div class="container center-align" id="ftrCpy"style="width: 100%; color: black; padding: 0px;">
                         Copyright ©2020 All rights reserved | This is my Project-1
                         <a href="#"><span style="color: black">Team-3</span></a>
                     </div>
                 </div>
               </footer>              
-              <!-- End of the footer -->
+    <!-- End of the footer -->
                     
         
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src= "script.js"></script>
         <script type="text/javascript" src="./materialize.js"></script>
+        
     </body>
    </html>
