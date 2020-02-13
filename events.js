@@ -150,7 +150,7 @@ $(document).ready(function(){
         //gives error message upon "no results or improper input"
         }
 
-        for(var i = 0; i < 20; i++) {
+        for(var i = 0; i < 10; i++) {
             var newDiv = $("<div>").data("id", i);
             newDiv.attr("class", "main-area").attr("id","mainArea");
             $("#results").append(newDiv);

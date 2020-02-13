@@ -1,3 +1,5 @@
+
+
 const startBtnEl = document.getElementById('startBtn');
 const Img1El = document.getElementById('landingImg1');
 const Img2E2 = document.getElementById('landingImg2');
@@ -24,7 +26,7 @@ if(Img3E3 != null) {
 		document.location.href = "eventapp.html";
 	});
 }
-
+// pull history or create empty array
 var searchInfo = JSON.parse(localStorage.getItem("searchInfo")) || []
 if(searchInfo.length) {
 	searchInfo.forEach(function(d) {
@@ -79,7 +81,7 @@ function uppercase(cityName) {
     }
     return newarray1.join(' ');
 }
-
+// on click for utilizing history re-populates fields
 function reSearch(cityName, eventType) {
 	$(".location").val(cityName);
 	$(".location").addClass("active");
