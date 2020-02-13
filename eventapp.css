@@ -5,15 +5,17 @@ body {
 
  .addInfo {
     position:fixed;
-    height: 500px;
+    height: 390px;
     width: 650px;
-    border: 1px solid black;
-    outline-style: inset;
-    outline-color: yellow;
+    border: 3px solid white;
+    margin-top: 50px;
     background-color: rgb(245, 244, 190);
     text-align: center;
     left: calc(50% - 325px);
     top: calc(50% - 250px);
+}
+.addInfo:hover{
+    border: 5px solid darkorange;
 }
 
 
@@ -84,13 +86,13 @@ body {
   }
 
   #map-image {
-    height: 250px;
+    height: 200px;
+    width: 400px;
 
   } 
   #events-image{
     height: 120px;
     width: 200px;
-    /* width: 120px; */
     flex-direction: column;
     background-color: whitesmoke;
     border: 2px solid white;
