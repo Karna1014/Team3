@@ -30,7 +30,11 @@ $(document).ready(function(){
         pageInfo = [];
         $("#results").empty();
         // empties the results before appendinfg new information
-        
+        if(!eventData._embedded) {
+            $("#results").text("No Results Found.  Please check for spelling errors and abbreviations.");
+        //gives error message upon "no results or improper input"
+        }
+
         for(var i = 0; i < 20; i++) {
             var newDiv = $("<div>").data("id", i);
             newDiv.attr("class", "main-area").attr("id","mainArea");
@@ -44,6 +48,7 @@ $(document).ready(function(){
             }
             pageInfo.push(extraInfo);
             var name = $("<h5>").text(eventData._embedded.events[i].name);
+            name.attr("class", "name");
             var picLink = $("<a>").attr("href", eventData._embedded.events[i].url);
             var image = $("<img>").attr("src", eventData._embedded.events[i].images[0].url);
             image.attr("class", "eventsImage");
@@ -52,7 +57,9 @@ $(document).ready(function(){
             newDiv.append(picLink);
             picLink.append(image);
             var date = $("<p>").text(eventData._embedded.events[i].dates.start.localDate);
+            date.attr("class", "data")
             var venue = $("<p>").text(eventData._embedded.events[i]._embedded.venues[0].name);
+            venue.attr("class", "venue");
             // newDiv.append(promoters);
             // Create additional info button with unique identity
             var moreInfoBtn = $("<button>").data("id", i).addClass("moreInfoBtn").text("Additional Info").attr("type", "info");
@@ -105,5 +112,13 @@ $(document).ready(function(){
             $(".resultInput").empty();
     
     });
+<<<<<<< HEAD
 
 });
+=======
+    
+    
+    });
+
+    
+>>>>>>> master

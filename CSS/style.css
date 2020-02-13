@@ -1,119 +1,93 @@
   *  {
     box-sizing: border-box;
   }
+/* Index Page  */
 
 body {
-  background: url("../Assets/pink-dust.png");
+  background: url("../Assets/bodyback.png");
    background-size: cover;
   -moz-background-size: cover;
   z-index: -99;
   width: 100%;
   height: 100vh; 
-
 }
+
 h1 {
     font-family: monoton; 
     animation: mymove 3s infinite;
-    color: #ffffff;
+    color: rgb(241, 11, 11);
+   
   }
-  @keyframes mymove {
-    50% {text-shadow: 10px 20px 30px rgb(0, 255, 234);}
-  }
+     
 
-  h5 {
-      margin-left: 15px;
-      margin-top: 25px;
-      margin-right: 15px;
-      margin-bottom: 35px;
-      color: black;
+/* End Navigation
 
-  }
+/* Start of App Desc(Index) Area */
 
-  .active {
-      padding-bottom: 15px;
+/* End of App Desc(Index) Area */
 
-  }
+/* Start of Icon(Index) Area */
 
-  #infoBox {
-    background: url("../Assets/cork-board.png");
-    margin-bottom: 20px;
+.svcTitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+ }
 
-  }
-  
-    
-  #landingImg1:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
-    z-index: 3;
-  }
-  #landingImg2:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-    z-index: 3;
-  }
-
-  #landingImg3:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-    z-index: 3;
-  }
-  #startBtn {
-    font-weight: bold;
-    
-  }
-
-/* here is the css for the navbar */
-
-.header_area .main-menu  .navbar-brand{
-  padding: 5px 1rem 0 1rem;
+ #svcStuff {
+  margin-top: 40px;
+  height: 200px;
 }
 
-.header_area .main-menu {
-  padding: 1rem 9rem;
-}
-.navbar{
-  margin-top: -15px;
+#svcBlurb {
+  font-size: 16px;
 }
 
-.header_area .main-menu .nav-item .nav-link{
-  font: normal ;
-  text-transform: uppercase;
-  padding: 1.2rem;
-  color: whitesmoke;
+.cardImg1:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  z-index: 3;
+}
+.cardImg2:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  z-index: 3;
 }
 
-.header_area .main-menu .navbar-nav .active a{
-  background: darkorange;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.cardImg3:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  z-index: 3;
 }
 
-.header_area .main-menu .navbar-nav a:hover{
-  color: brown;
-  
+.cardImg4:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  z-index: 3;
 }
-/* End Navigation */
 
 /* Start of the footer */
-footer.footer-area .social h5{
-  font: normal 500 23px/30px;
+
+.footer-copyright {
+  background: url("../Assets/bodyback.png");
 }
 
-footer.footer-area .social a > i{
+#ftrIcon {
   font-size: 22px;
   padding: 2rem;
-  color: teal;
+  color: red;
   padding-top: 5px;
 }
 
-footer.footer-area .social a:hover >i{
-  color: burlywood;
+#ftrIcon:hover {
+  color: rgb(131, 145, 190);
 }
 
 /* End of the footer */
+
 
 
