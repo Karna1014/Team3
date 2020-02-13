@@ -28,7 +28,11 @@ $(document).ready(function(){
         pageInfo = [];
         $("#results").empty();
         // empties the results before appendinfg new information
-        
+        if(!eventData._embedded) {
+            $("#results").text("No Results Found.  Please check for spelling errors and abbreviations.");
+        //gives error message upon "no results or improper input"
+        }
+
         for(var i = 0; i < 20; i++) {
             var newDiv = $("<div>").data("id", i);
             newDiv.attr("class", "main-area").attr("id","mainArea");
