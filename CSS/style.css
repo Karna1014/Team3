@@ -1,6 +1,7 @@
   *  {
     box-sizing: border-box;
   }
+/* Index Page  */
 
 body {
   background: url("../Assets/bodyback.png");
@@ -9,110 +10,71 @@ body {
   z-index: -99;
   width: 100%;
   height: 100vh; 
-
 }
+
 h1 {
     font-family: monoton; 
     animation: mymove 3s infinite;
     color: rgb(241, 11, 11);
    
   }
-  @keyframes mymove {
-    50% {text-shadow: 10px 20px 30px rgb(0, 255, 234);}
-  }
+     
 
-  h5 {
-      margin-left: 15px;
-      margin-top: 25px;
-      margin-right: 15px;
-      margin-bottom: 35px;
-      color: black;
-
-  }
-
-
-  #contents{
-    margin-left: 200px;
-  }
-  
-    
-  #landingImg1:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
-    z-index: 3;
-  }
-  #landingImg2:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-    z-index: 3;
-  }
-
-  #landingImg3:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-    z-index: 3;
-  }
-  #startBtn {
-    font-weight: bold;
-    
-  }
-
-  #infoBox{
-    background: rgb(140, 136, 148);
-  }
-    
-
-/* here is the css for the navbar */
-
-.header_area .main-menu  .navbar-brand{
-  padding: 5px 1rem 0 1rem;
-}
-
-.header_area .main-menu {
-  padding: 1rem 6rem;
-}
-.navbar{
-  margin-top: -15px;
-}
-
-.header_area .main-menu .nav-item .nav-link{
-  font: normal ;
-  text-transform: uppercase;
-  padding: 1.2rem;
-  /* color: rgb(109, 109, 187); */
-  color: whitesmoke;
-}
-
-
-.header_area .main-menu .navbar-nav .active a{
-  background: red;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-
-
-.header_area .main-menu .navbar-nav a:hover{
-  color: red;
-  
-} 
-#svcStf {
-    margin-top: 50px;
-    padding-top: 50px;
-    height: 150px;
-}
 /* End Navigation
+
+/* Start of App Desc(Index) Area */
+
+/* End of App Desc(Index) Area */
+
+/* Start of Icon(Index) Area */
+
+.svcTitle {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+ }
+
+ #svcStuff {
+  margin-top: 40px;
+  height: 200px;
+}
+
+#svcBlurb {
+  font-size: 16px;
+}
+
+.cardImg1:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  z-index: 3;
+}
+.cardImg2:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  z-index: 3;
+}
+
+.cardImg3:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  z-index: 3;
+}
+
+.cardImg4:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  z-index: 3;
+}
 
 /* Start of the footer */
 
-.page-footer{
+.footer-copyright {
   background: url("../Assets/bodyback.png");
 }
-
 
 #ftrIcon {
   font-size: 22px;
@@ -127,24 +89,5 @@ h1 {
 
 /* End of the footer */
 
-.services{
-  border: 2px solid white;
-  background: white;
-}
 
-.services:hover{
-  border: 2px solid red;
-  border-radius: 5px;
-}
 
-.about-image{
-  margin-left: 60px;
-}
-
-.about-area{
-  margin-top: 30px;
-}
-
-#hr{
-  border-bottom: 5px solid #ddd;
-}
