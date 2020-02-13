@@ -1,11 +1,120 @@
 $(document).ready(function(){
+    M.Datepicker.init($('.datepicker1'), {
+        format: "yyyy-mm-dd"
+    });
+    M.Datepicker.init($('.datepicker2'), {
+        format: "yyyy-mm-dd"
+    });
+    $('select').formSelect();
+    
+    // trying to make list so its not hard coded--------------------
+    // var interestsList = [
+    //     {
+    //         name : "Comedy",
+    //         value: "Comedy",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "Dance",
+    //         value: "Dance",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "Music",
+    //         value: "Music",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Alternative",
+    //         value: "Alternative",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Clasical",
+    //         value: "Clasical",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Country",
+    //         value: "Country",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Electronic",
+    //         value: "Electronic",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Jazz",
+    //         value: "Jazz",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Rap",
+    //         value: "Rap",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Rock",
+    //         value: "Rock",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "Sports",
+    //         value: "Sports",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Baseball",
+    //         value: "Baseball",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Basketball",
+    //         value: "Basketball",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Football",
+    //         value: "Football",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Hockey",
+    //         value: "Hockey",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Tennis",
+    //         value: "Tennis",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Volleyball",
+    //         value: "Volleyball",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Wrestling",
+    //         value: "Wrestling",
+    //         img: ""
+    //     },
+    // ];
+    // for(var i = 0; i < interestsList.length; i++) {
+    //    var newOption = $("<option>").attr("value", interestsList[i].valiue).attr("data-icon", interestsList[i].img).text(interestsList[i].name);
+    //    console.log(newOption);
+    //    $(".interests").append(newOption);
+    // }
+    //  --------------------------------------------
 
+    // function to render map in div with class addInfo
     function createMap(mapQuestURL) {
         var newImg = $("<img>").attr("id", "map-image");
         newImg.attr("src", mapQuestURL);
         $(".addInfo").append(newImg);
     }
 
+    // on click event to render the results of the search
     $("#submit").on("click", function() {
     
 
@@ -13,10 +122,18 @@ $(document).ready(function(){
     
     var city = $(".location").val();
     var eventType = $(".interests").val();
+    var startDate = $(".startDate").val();
+    var endDate = $(".endDate").val();
+    if(startDate !== "") {
+        startDate = $(".startDate").val() + "T00:00:00Z";
+    }
+    if(endDate !== "") {
+        endDate = $(".endDate").val() + "T23:59:00Z";
+    }
+    console.log(startDate);
+    var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&startDateTime=" + startDate + "&endDateTime=" + endDate +"&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
 
-    
-
-    var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
+    // var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
     
     console.log(queryURL);
     $.ajax({
@@ -44,7 +161,8 @@ $(document).ready(function(){
                 description: eventData._embedded.events[i].info,
                 venue: eventData._embedded.events[i]._embedded.venues[0].name
             }
-            pageInfo.push(extraInfo);
+            // pageInfo.push(extraInfo); //lodash integration below
+            pageInfo = _.concat(pageInfo, extraInfo);
             var name = $("<h5>").text(eventData._embedded.events[i].name);
             name.attr("class", "name");
             var picLink = $("<a>").attr("href", eventData._embedded.events[i].url);
@@ -67,7 +185,8 @@ $(document).ready(function(){
     
     });
     });
-    
+
+    // on click event to render the additional info Popup
     $("#results").on("click", "button", function(event) {
         console.log(event.target)
         if($(this).attr("type") === "info") {
@@ -86,15 +205,15 @@ $(document).ready(function(){
             var mapQuestURL = "https://www.mapquestapi.com/staticmap/v5/map?locations=" + locationCoordinates.lat + "," + locationCoordinates.lon + "&banner=" + bannerText + "&size=@2x&key=A492QA2ceege88RFFGEJJWQjU8t7Hcxm";
             $(".addInfoDiv").append(newInfoDiv);
             var infoName = $("<h4>").text(pageInfo[listIndex].name);
+            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X").attr("style", "float: right; margin: 1%; background-color: orange");
             var infoDescription = $("<p>").text(pageInfo[listIndex].description);
-            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X");
             var br = $("<br>");
-            newInfoDiv.append(infoName, infoDescription);
+            newInfoDiv.append(clearBtn, br, infoName, infoDescription);
             createMap(mapQuestURL);
-            newInfoDiv.append(br, clearBtn);
         }
     })
 
+    // on click event to remove the popup window
     $(".addInfoDiv").on("click", "button", function(event) {
         console.log(event.target)
         if($(this).attr("type") === "clear") {
@@ -104,12 +223,10 @@ $(document).ready(function(){
             
         }
     })
+
     $("#delete").on("click", function() {
             $(".resultInput").empty();
     
     });
-    
-    
-    });
 
-    
+});
