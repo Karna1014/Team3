@@ -5,6 +5,108 @@ $(document).ready(function(){
     M.Datepicker.init($('.datepicker2'), {
         format: "yyyy-mm-dd"
     });
+    $('select').formSelect();
+    
+    // trying to make list so its not hard coded--------------------
+    // var interestsList = [
+    //     {
+    //         name : "Comedy",
+    //         value: "Comedy",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "Dance",
+    //         value: "Dance",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "Music",
+    //         value: "Music",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Alternative",
+    //         value: "Alternative",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Clasical",
+    //         value: "Clasical",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Country",
+    //         value: "Country",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Electronic",
+    //         value: "Electronic",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Jazz",
+    //         value: "Jazz",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Rap",
+    //         value: "Rap",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Rock",
+    //         value: "Rock",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "Sports",
+    //         value: "Sports",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Baseball",
+    //         value: "Baseball",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Basketball",
+    //         value: "Basketball",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Football",
+    //         value: "Football",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Hockey",
+    //         value: "Hockey",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Tennis",
+    //         value: "Tennis",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Volleyball",
+    //         value: "Volleyball",
+    //         img: ""
+    //     },
+    //     {
+    //         name : "- Wrestling",
+    //         value: "Wrestling",
+    //         img: ""
+    //     },
+    // ];
+    // for(var i = 0; i < interestsList.length; i++) {
+    //    var newOption = $("<option>").attr("value", interestsList[i].valiue).attr("data-icon", interestsList[i].img).text(interestsList[i].name);
+    //    console.log(newOption);
+    //    $(".interests").append(newOption);
+    // }
+    //  --------------------------------------------
+
     // function to render map in div with class addInfo
     function createMap(mapQuestURL) {
         var newImg = $("<img>").attr("id", "map-image");
