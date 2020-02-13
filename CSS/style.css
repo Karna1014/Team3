@@ -17,7 +17,12 @@ h1 {
     animation: mymove 3s infinite;
     color: rgb(241, 11, 11);
    
-  }   
+  } 
+  
+  .navbar-fixed {
+    margin-top: 0;
+    padding-top: 0;
+  }
 
 /* End Navigation
 
