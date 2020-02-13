@@ -1,5 +1,10 @@
 $(document).ready(function(){
-
+    M.Datepicker.init($('.datepicker1'), {
+        format: "yyyy-mm-dd"
+    });
+    M.Datepicker.init($('.datepicker2'), {
+        format: "yyyy-mm-dd"
+    });
     // function to render map in div with class addInfo
     function createMap(mapQuestURL) {
         var newImg = $("<img>").attr("id", "map-image");
@@ -15,10 +20,18 @@ $(document).ready(function(){
     
     var city = $(".location").val();
     var eventType = $(".interests").val();
+    var startDate = $(".startDate").val();
+    var endDate = $(".endDate").val();
+    if(startDate !== "") {
+        startDate = $(".startDate").val() + "T00:00:00Z";
+    }
+    if(endDate !== "") {
+        endDate = $(".endDate").val() + "T23:59:00Z";
+    }
+    console.log(startDate);
+    var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&startDateTime=" + startDate + "&endDateTime=" + endDate +"&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
 
-    
-
-    var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
+    // var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
     
     console.log(queryURL);
     $.ajax({
@@ -46,7 +59,8 @@ $(document).ready(function(){
                 description: eventData._embedded.events[i].info,
                 venue: eventData._embedded.events[i]._embedded.venues[0].name
             }
-            pageInfo.push(extraInfo);
+            // pageInfo.push(extraInfo); //lodash integration below
+            pageInfo = _.concat(pageInfo, extraInfo);
             var name = $("<h5>").text(eventData._embedded.events[i].name);
             name.attr("class", "name");
             var picLink = $("<a>").attr("href", eventData._embedded.events[i].url);
@@ -112,13 +126,5 @@ $(document).ready(function(){
             $(".resultInput").empty();
     
     });
-<<<<<<< HEAD
 
 });
-=======
-    
-    
-    });
-
-    
->>>>>>> master

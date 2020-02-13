@@ -44,20 +44,32 @@
     <div class="col s12 z-depth-4" id="main-area"><h4 align="center" id="header"> <strong>The Magic Formula</strong></h4>
         <!-- USER INPUT FORM GOES HERE. -->
             <div class="row">
-            <form class="col s12">
-            <div class="row">
-            <div class="input-field col s6">
-            <i class="material-icons prefix" id="icon1">palette</i>
-            <input id="icon_palette" type="text" class="validate interests">
-            <label for="icon_palette" id="label1">Interest?</label>
+                <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix" id="icon1">palette</i>
+                        <input id="icon_palette" type="text" class="validate interests">
+                        <label for="icon_palette" id="label1">Interest?</label>
         <!-- add dropbox of choices? -->
-            </div>
-            <div class="input-field col s6">
-            <i class="material-icons prefix" id="icon2">public</i>
-            <input id="icon_public" type="text" class="validate location">
-            <label for="icon_public" id="label2">City?</label>
-            </div>
-            </div>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix" id="icon2">public</i>
+                        <input id="icon_public" type="text" class="validate location">
+                        <label for="icon_public" id="label2">City?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix" id="icon1">palette</i>
+                        <input type="text" class="datepicker1 startDate">
+                        <label for="icon_palette" id="label1">Start Date</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix" id="icon2">public</i>
+                        <input type="text" class="datepicker2 endDate">
+                        <label for="icon_public" id="label2">End Date</label>
+                    </div>
+                </div>
             <div>
             <div class="col s12">
             <div class="button">
@@ -104,6 +116,7 @@
 
         <script type="text/javascript" src="materialize.js"></script>
         <script src="events.js"></script>
+        <script src="lodash.js"></script>
         <script src="script.js"></script>          
 
     </body>
