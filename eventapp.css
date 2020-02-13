@@ -23,8 +23,10 @@ body {
     float: left;
     width: 25%;
     height: 100%;
-    background-color: #eee;
-  
+
+    background-color: #3f51b5;
+    color: #ffffff;
+
   }
 
   #mainArea{
@@ -74,7 +76,7 @@ body {
 #blankbox {
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(160, 231, 219);
+    background-color: #3f51b5;
     height: 3px;
 } 
   
@@ -109,9 +111,9 @@ body {
   #events-image:hover
 {
         box-shadow:
-                1px 1px #53a7ea,
-                2px 2px #53a7ea,
-                3px 3px #53a7ea;
+                1px 1px #3f51b5
+                2px 2px #3f51b5,
+                3px 3px #3f51b5;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
 }
@@ -124,6 +126,10 @@ body {
       text-align: center;
   }
 
+  #icon1, #icon2 {
+    color: red;
+  }
+
   #submit {
     text-align: center;
     width: 110px;
@@ -134,6 +140,9 @@ body {
     background-attachment: red;
     
   }
+
+  
+
 
   .moreInfoBtn{
     margin-left: 10px;
