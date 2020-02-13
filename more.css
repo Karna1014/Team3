@@ -1,0 +1,49 @@
+body {
+background-image: url('Assets/bodyback.png');
+background-size: cover;
+}
+
+#devPic1, #devPic2, #devPic3, #devPic4 {
+    padding: 0px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#map {
+    margin-left: 80px;
+}
+
+#maplink {
+    margin-left: 140px;
+}
+
+h1, #subtitle {
+    font-family: 'Shadows Into Light', cursive;
+}
+.container {
+    background-image: "./CSS/jasmin.jpeg";
+}
+
+#leftCon {
+    padding-top: 40px;
+    padding-left: 120px;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:200px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+header, #title {
+    margin-bottom: 10px;
+    font-family: 'Monoton', cursive;
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px rgb(18, 201, 233);}
+}
