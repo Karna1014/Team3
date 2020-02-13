@@ -97,25 +97,28 @@ h1 {
   color: red;
   
 } 
+#svcStf {
+    margin-top: 50px;
+    padding-top: 50px;
+    height: 150px;
+}
 /* End Navigation
 
 /* Start of the footer */
 
 .page-footer{
-  background: url("../Assets/old_map.png");
-}
-footer.footer-area .social h5{
-  font: normal 500 23px/30px;
+  background: url("../Assets/bodyback.png");
 }
 
-footer.footer-area .social a > i{
+
+#ftrIcon {
   font-size: 22px;
   padding: 2rem;
   color: red;
   padding-top: 5px;
 }
 
-footer.footer-area .social a:hover >i{
+#ftrIcon:hover {
   color: rgb(131, 145, 190);
 }
 
