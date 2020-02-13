@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link type="text/css" rel="stylesheet" href="CSS/material.css"  media="screen,projection"/>
-        
-
         <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -15,11 +13,12 @@
     </head>
 
 
-<body>
-    <nav>
+    <body>
+        <div class="navbar-fixed">
+        <nav>
         <div class="nav-wrapper nav #3f51b5 indigo nav z-depth-5">
-          <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventNav" style="margin: 10px;"></a>
-          <ul id="nav-mobile" class="right logonav">
+        <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventNav" style="margin: 10px;"></a>
+        <ul id="nav-mobile" class="right logonav">
             <li><a href="index.html">Home</a></li>
             <li><a href="eventapp.html">Events</a></li>
             <li><a href="faq.html">Faq</a></li>
@@ -27,99 +26,82 @@
             </ul>
         </div>
       </nav>
-        
-    <header><h1 id="title" align="center">Eventbrite &nbsp; Knockoff</h1></header>
-    <h5 id="subtitle" align="center">The perfect adventure awaits you.</h5>
-
-
-    <div class="row">
-    <div class="addInfoDiv col s6 z-depth-6"></div>
     </div>
-
         
-<div class="row">
-    <div class="col s3" id="sidebar"><h5 align="center" id="header">Recently Searched</h5>
+    <!-- <header><h1 id="title" align="center">Eventbrite &nbsp; Knockoff</h1></header> -->
+          <h5 id="subtitle" align="center">The perfect adventure awaits you.</h5>
+          <div class="row">
+          <div class="addInfoDiv col s6 z-depth-6"></div>
+          </div>     
+          <div class="row">
+          <div class="col s3" id="sidebar"><h5 align="center" id="header">Recently Searched</h5>
         <!-- Recent searches will be dynamically added here. -->
-            <p align="center">Placeholder</p al>
-                <ul id="searchList">
+          <p align="center">Placeholder</p al>
+          <ul id="searchList">
+          </ul>
+          </div>
 
-                </ul>
-        </div>
-
-    <div class="col s6 z-depth-4" id="mainArea"><h4 align="center" id="header"> <strong>The Magic Formula</strong></h4>
+    <div class="col s12 z-depth-4" id="main-area"><h4 align="center" id="header"> <strong>The Magic Formula</strong></h4>
         <!-- USER INPUT FORM GOES HERE. -->
             <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix" id="icon1">palette</i>
-                            <input id="icon_palette" type="text" class="validate interests">
-                        <label for="icon_palette" id="label1">Interest?</label>
-                        <!-- add dropbox of choices? -->
-                        </div>
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix" id="icon2">public</i>
-                            <input id="icon_public" type="text" class="validate location">
-                            <label for="icon_public" id="label2">City?</label>
-                        
-                        </div>
-                    </div>
-                    
-
-                    <div>
-                        <div class="col s12">
-                            <div class="button">
-                                <button type = "button" id="submit" align="center" onclick="" class="btn btn-primary text-center">Submit!</button>
-                                </div>
-                        </div>
-                    </div>
-                </form>
-                   
+            <form class="col s12">
+            <div class="row">
+            <div class="input-field col s6">
+            <i class="material-icons prefix" id="icon1">palette</i>
+            <input id="icon_palette" type="text" class="validate interests">
+            <label for="icon_palette" id="label1">Interest?</label>
+        <!-- add dropbox of choices? -->
             </div>
-
-
-                <div id="results"></div>
-                <br>
-
-
-               
-                
+            <div class="input-field col s6">
+            <i class="material-icons prefix" id="icon2">public</i>
+            <input id="icon_public" type="text" class="validate location">
+            <label for="icon_public" id="label2">City?</label>
+            </div>
+            </div>
+            <div>
+            <div class="col s12">
+            <div class="button">
+            <button type = "button" id="submit" align="center" onclick="" class="btn btn-primary text-center">Submit!</button>
+            </div>
+            </div>
+            </div>
+            </form>       
+            </div>
+            <div id="display">
+            <div id="results">
+            </div> 
+            </div>     
         </div>
-        
         </div>
-    
-    
-        </div> -->
+        </div> 
 
+        <!-- start of the footer -->
         <footer class="page-footer N/A transparent">
             <div class="container col s12">
-                <div class="col s12 center-align">
-                  <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventFoot center-align" style="padding: 0px;"></a>
-                  <p class="black-text text-lighten-4 center-align" style="margin: 0px; font-weight: bold;">FOLLOW US</p>
-                </div>
-                <div class="container col s12">
-                    <div class="row center-align" style="margin: 0px; font-size: 16px; font-weight: bold;" id="socLinks">
-                            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i> &nbsp; &nbsp;   </a>
-                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i> &nbsp; &nbsp;   </a>
-                            <a href="https://instagram.com/"><i class="fab fa-instagram"></i>  </a>
-                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i>   </a>
-                            <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i>   </a>
-                    </div>
-                </div>
+            <div class="col s12 center-align">
+            <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventFoot center-align" style="padding-bottom: 10px;"></a>
+            <p class="black-text text-lighten-4 center-align" style="margin: 0px; padding-bottom: 5px; font-weight: bold;">FOLLOW US</p>
             </div>
-            <div class="footer-copyright">
-                <div class="container center-align" style="color: black; padding: 0px;">
-                    Copyright ©2020 All rights reserved | This is my Project-1
-                    <a href="#"><span style="color: black">Team-3</span></a>
-                </div>
+            <div class="container col s12">
+            <div class="row center-align" style="margin: 0px; font-size: 16px; font-weight: bold;" id="socLinks">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+            <a href="https://linkedin.com/"><i class="fab fa-linkedin" id="ftrIcon"></i> &nbsp; &nbsp; </a>
             </div>
-          </footer>              
-       
-       
-       
-       
-       
-       
+        </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align" id="ftrCpy"style="width: 100%; color: black; padding: 0px;">
+             Copyright ©2020 All rights reserved | This is my Project-1
+            <a href="#"><span style="color: black">Team-3</span></a>
+            </div>
+        </div>
+    </footer>              
+
+<!-- End of the footer -->
+
         <script type="text/javascript" src="materialize.js"></script>
         <script src="events.js"></script>
         <script src="script.js"></script>          
