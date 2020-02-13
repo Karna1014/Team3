@@ -5,28 +5,30 @@ body {
 
  .addInfo {
     position:fixed;
-    height: 390px;
-    width: 650px;
     border: 3px solid white;
-    margin-top: 50px;
-    background-color: rgb(245, 244, 190);
+    background-color: #3f51b5;
+    color: #ffffff;
     text-align: center;
-    left: calc(50% - 325px);
-    top: calc(50% - 250px);
+    width: 25%;
+    
 }
 .addInfo:hover{
-    border: 5px solid darkorange;
+    border: 2px solid red;
 }
 
-
+.container {
+  width: 90%;
+}
+.row {
+  margin-top: 2.5%;
+}
 #sidebar, #relImages {
     float: left;
     width: 25%;
     height: 100%;
-
     background-color: #3f51b5;
     color: #ffffff;
-
+  margin: 0 1%;
   }
 
   #mainArea{
@@ -44,8 +46,8 @@ body {
     border: 2px solid red;
   }
   #main-area{
-    width: 55%;
-    margin-left: 20px;
+    /* width: 55%; */
+    /* margin-left: 20px; */
   
   }
 
@@ -82,15 +84,20 @@ body {
   
   /* Clear floats after the columns */
   
-
+h4 {
+  margin: 2.5%
+}
+p {
+  margin: 2.5%
+}
   .column-desc, .column-descImg {
     float: left;
     width: 50%;
   }
 
   #map-image {
-    height: 200px;
-    width: 400px;
+    width: 95%;
+    margin: 2.5%;
 
   } 
   #events-image{

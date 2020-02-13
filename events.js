@@ -205,7 +205,7 @@ $(document).ready(function(){
             var mapQuestURL = "https://www.mapquestapi.com/staticmap/v5/map?locations=" + locationCoordinates.lat + "," + locationCoordinates.lon + "&banner=" + bannerText + "&size=@2x&key=A492QA2ceege88RFFGEJJWQjU8t7Hcxm";
             $(".addInfoDiv").append(newInfoDiv);
             var infoName = $("<h4>").text(pageInfo[listIndex].name);
-            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X").attr("style", "float: right; margin: 1%; background-color: orange");
+            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X").attr("style", "float: right; margin: 1%; background-color: red; color: white");
             var infoDescription = $("<p>").text(pageInfo[listIndex].description);
             var br = $("<br>");
             newInfoDiv.append(clearBtn, br, infoName, infoDescription);
