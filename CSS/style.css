@@ -17,14 +17,9 @@ h1 {
     animation: mymove 3s infinite;
     color: rgb(241, 11, 11);
    
-  }
-     
+  }   
 
 /* End Navigation
-
-/* Start of App Desc(Index) Area */
-
-/* End of App Desc(Index) Area */
 
 /* Start of Icon(Index) Area */
 
@@ -70,6 +65,28 @@ h1 {
   z-index: 3;
 }
 
+/* Faq Page */
+
+.main-container{
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 70px 0 20px;
+  width: 100%;
+  
+} 
+
+#qMark {
+  color: red
+}
+
+.collapsible-header {
+  font-size: 20px;
+}
+
+.collapsible-body {
+  font-size: 18px;
+  color: blue
+}
 /* Start of the footer */
 
 .footer-copyright {
@@ -81,6 +98,8 @@ h1 {
   padding: 2rem;
   color: red;
   padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #ftrIcon:hover {
