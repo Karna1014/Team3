@@ -5,47 +5,49 @@ body {
 
  .addInfo {
     position:fixed;
-    height: 390px;
-    width: 650px;
     border: 3px solid white;
-    margin-top: 50px;
-    background-color: rgb(245, 244, 190);
+    background-color: #3f51b5;
+    color: #ffffff;
     text-align: center;
-    left: calc(50% - 325px);
-    top: calc(50% - 250px);
+    width: 25%;
+    
 }
 .addInfo:hover{
-    border: 5px solid darkorange;
+    border: 2px solid rgb(255, 73, 73);
 }
 
-
+.container {
+  width: 90%;
+}
+.row {
+  margin-top: 2.5%;
+}
 #sidebar, #relImages {
     float: left;
     width: 25%;
     height: 100%;
-
     background-color: #3f51b5;
     color: #ffffff;
-
+    margin: 0 1%;
   }
 
   #mainArea{
     /* float: left; */
     width: 100%;
-    height: 290px;
+    /* height: 290px; */
     border: 5px solid white;
     border-radius: 5px;
     background-color:whitesmoke;
     margin-top: 5px;
-
+    text-align: center;
   }
 
   #mainArea:hover{
-    border: 2px solid red;
+    border: 2px solid rgb(255, 73, 73);
   }
   #main-area{
-    width: 55%;
-    margin-left: 20px;
+    /* width: 55%; */
+    /* margin-left: 20px; */
   
   }
 
@@ -81,21 +83,31 @@ body {
 } 
   
   /* Clear floats after the columns */
-  
-
+ 
+  .clearBtn {
+    background-color: #3f51b5;
+    color: white;
+    border-radius: 8px;
+    height: 25px;
+  }
+h4 {
+  margin: 2.5%;
+}
+p {
+  margin: 2.5%
+}
   .column-desc, .column-descImg {
     float: left;
     width: 50%;
   }
 
   #map-image {
-    height: 200px;
-    width: 400px;
+    width: 95%;
+    margin: 2.5%;
 
   } 
   #events-image{
-    height: 120px;
-    width: 200px;
+    width: 80%;
     flex-direction: column;
     background-color: whitesmoke;
     border: 2px solid white;
@@ -127,9 +139,10 @@ body {
   }
 
   #icon1, #icon2 {
-    color: red;
+    color: rgb(255, 73, 73);
+    font-size: 200%;
   }
-
+  
   #submit {
     text-align: center;
     width: 110px;
@@ -137,13 +150,14 @@ body {
     font-size: 17px;
     font-family: 'Monoton', cursive;
     color: whitesmoke;
-    background-attachment: red;
+    background-attachment: rgb(255, 73, 73);
     
   }
 
   .datepicker-table td.is-today {
     color: #3f51b5;
   }
+
   .datepicker-date-display {
     background-color: #3f51b5;
     color: #ffffff;
@@ -161,13 +175,15 @@ body {
   } */
 
 
+
   .moreInfoBtn{
     margin-left: 10px;
     margin-top: -20px;
-    background-color: red;
+    background-color: rgb(255, 73, 73);
     color: white;
     border-radius: 8px;
-    height: 30px;
+    height: 90%;
+    margin-bottom: 10%;
   }
 
  .name{
@@ -190,11 +206,25 @@ body {
 .footer-copyright {
   background: url("../Assets/bodyback.png");
 }
-
+#searchList {
+  text-align: center;
+}
+.full {
+  width: 95%;
+  margin: 1%;
+  background-color: whitesmoke;
+  color: black;
+  height: 90%;
+}
+.full:hover {
+  background-color: rgb(255, 73, 73);
+  color: white;
+  height: 95%;
+}
 #ftrIcon {
   font-size: 22px;
   padding: 2rem;
-  color: red;
+  color: rgb(255, 73, 73);
   padding-top: 5px;
 }
 
@@ -208,4 +238,60 @@ body {
 
 /* End of the footer */
 
- 
+@media screen and (max-width: 1240px) {
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .full {
+    font-size: 16px;
+  }
+  .moreInfoBtn {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .full {
+    font-size: 12px;
+    
+  }
+  .moreInfoBtn {
+    font-size: 12px;
+  }
+
+}
+@media screen and (max-width: 660px) {
+  h4 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 8px;
+    padding: 2.5px;
+  }
+  .full {
+    font-size: 8px;
+    margin: .25%;
+  }
+  .moreInfoBtn {
+    font-size: 8px;
+    margin: .25%;
+  }
+  
+}

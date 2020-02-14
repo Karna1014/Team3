@@ -133,8 +133,6 @@ $(document).ready(function(){
     console.log(startDate);
     var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&startDateTime=" + startDate + "&endDateTime=" + endDate +"&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
 
-    // var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
-    
     console.log(queryURL);
     $.ajax({
         url: queryURL,
@@ -203,9 +201,10 @@ $(document).ready(function(){
             }
             var bannerText = pageInfo[listIndex].venue;
             var mapQuestURL = "https://www.mapquestapi.com/staticmap/v5/map?locations=" + locationCoordinates.lat + "," + locationCoordinates.lon + "&banner=" + bannerText + "&size=@2x&key=A492QA2ceege88RFFGEJJWQjU8t7Hcxm";
+            $(".addInfoDiv").empty();
             $(".addInfoDiv").append(newInfoDiv);
             var infoName = $("<h4>").text(pageInfo[listIndex].name);
-            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X").attr("style", "float: right; margin: 1%; background-color: orange");
+            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X").attr("style", "float: right; margin: 1%; background-color: #3f51b5; border: none; color: white");
             var infoDescription = $("<p>").text(pageInfo[listIndex].description);
             var br = $("<br>");
             newInfoDiv.append(clearBtn, br, infoName, infoDescription);

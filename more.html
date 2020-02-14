@@ -6,165 +6,223 @@
         <link type="text/css" rel="stylesheet" href="CSS/material.css"  media="screen,projection"/>
         
 
-        <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light&display=swap" rel="stylesheet"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
         <link href="https://fonts.googleapis.com/css?family=Monoton|Righteous|Shadows+Into+Light&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="more.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- <link href="eventapp.css" rel="stylesheet"> -->
+        <!-------link to Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     </head>
      
-<body class="container">
-     
-      </header>
-        <h1 id="title" align="center">About &nbsp; the &nbsp; Developers</h1>
-        <p align="center">Click on an image to learn about each of the developers.</p>
-        <hr>
-    </header>
+  
 
-<div id="leftCon" class="row">
-
-  <div class="col s6">
-
-    <div class="row">
-        <div id="devPic1" class="col s6">
-          <img src="./CSS/jasmin.jpeg" alt="image 1" onclick="myFunction1()" width="150x150" class="thumbnail z-depth-5"  id="devPic1"/>
-        </div>
-        <div id="devPic2" class="col s6">
-          <img src="./CSS/jasmin.jpeg" alt="image 2" onclick="myFunction2()" width="150x150" class="thumbnail z-depth-5" id="devPic2"/> 
-        </div>
+<body>
+<!-- Start of Nav -->
+  <nav>
+    <div class="nav-wrapper nav #3f51b5 indigo nav z-depth-5">
+      <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventNav" style="margin: 10px;"></a>
+        <ul id="nav-mobile" class="right logonav" style="float: right; font-size: 18px; font-weight: bold">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eventapp.html">Events</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="more.html">About Us</a></li>
+        </ul>
     </div>
+</nav>
+<!-- End of Nav Bar -->
 
-    <div class="row">
-        <div id="devPic3" class="col s6">
-          <img src="./CSS/jasmin.jpeg" alt="image 3" onclick="myFunction3()"  width="150x150" class="thumbnail z-depth-5" id="devPic3"/> 
-        </div>
-        <div id="devPic4" class="col s6">
-          <img src="./CSS/jasmin.jpeg" alt="image 4" onclick="myFunction4()"  width="150x150" class="thumbnail z-depth-5" id="devPic4"/> 
-        </div>
-      </div>
-  </div>
-
-
-  <div class="col s6">
-      <div id="aboutDev">
-
-        <div id="aboutUs" style="display:block;">
-          <h1 align="center">About Us</h1>
-          <p>Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
-        </div>
-       
-        <div id="jasmin" style="display:none;">
-          <h1>Jasmin Rowdy</h1>
-          <p>Hello my name is Jasmin. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
-               <div class="row">
-                  <div class="col s4">
-                        <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
-                        <a href="https://github.com/">Github Profile</a>
-                  </div>
-                  <div class="col s3">
-                    <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
-                      <a href="https://www.linkedin.com/">LinkedIn</a>
-                </div>
-                  <div class="col s5">
-                    <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
-                    <a href="#">jrowdy@wcpss.net</a>
-                  </div>
-               </div>
-        </div>
-        
-
-        
-        
-        <div id="keshav" style="display:none;">
-          <h1>Keshav Savva</h1>
-          <p>Keshav. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
-          <div class="row">
-            <div class="col s4">
-                  <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
-                  <a href="https://github.com/">Github Profile</a>
-            </div>
-            <div class="col s3">
-              <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
-                <a href="https://www.linkedin.com/">LinkedIn</a>
-          </div>
-            <div class="col s5">
-              <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
-              <a href="#">email@gmail.com</a>
-            </div>
-         </div>
-        </div>
-        
-        <div id="karna" style="display:none;">
-          <h1>Karna Cutolo</h1>
-          <p>Karna. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
-          <div class="row">
-            <div class="col s4">
-                  <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
-                  <a href="https://github.com/">Github Profile</a>
-            </div>
-            <div class="col s3">
-              <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
-                <a href="https://www.linkedin.com/">LinkedIn</a>
-          </div>
-            <div class="col s5">
-              <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
-              <a href="#">email@gmail.com</a>
-            </div>
-         </div>
-        </div>
-        
-        <div id="asad" class="collapse">
-          <h1>Asad Rauf</h1>
-          <p>Asad. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
-          <div class="row">
-            <div class="col s3">
-                  <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
-                  <a href="https://github.com/">Github Profile</a>
-            </div>
-            <div class="col s3">
-              <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
-                <a href="https://www.linkedin.com/">LinkedIn</a>
-          </div>
-            <div class="col s6">
-              <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
-              <a href="#">email@gmail.com</a>
-            </div>
-         </div>
-        </div>
-      </div>
-  </div>
-</div>
-
+<!-- Start of header -->
+</header>
+<h1 id="title" align="center">About &nbsp; the &nbsp; Developers</h1>
+<p id="devTitle" align="center">Click on an image to learn about each of the developers.</p>
 <hr>
-<!-- Office Hours & Address Starts here. First column is left blank for now.-->
-<div class="row">
-  <div class="col s4"></div>
-  <div class="col s4">
-    <h5 align="center">--Office Hours--</h5>
-    <p align="center">Tuesday: 6:30-9:30 PM</p>
-    <p align="center">Thursday: 6:30-9:30 PM</p>
-    <p align="center">Saturday: 10-2 PM</p>
-</div>
-  <div class="col s4">
-      <h3 id="subtitle" align="center">UNC Coding Boot Camp</h3>
-      <p align="center">1008 Parkside Main St, Cary, NC 27519</p>
-      <img src="./Assets/map.png" id="map" alt="Satellite Image" width="200px" height="200px"> 
-      <br>
-      <a id="maplink" href="https://www.google.com/maps/place/1008+Parkside+Main+St,+Cary,+NC+27519/@35.8462661,-78.8879498,549m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89acee885012a3db:0x8542c9a16f7585b3!8m2!3d35.8462661!4d-78.8857611">Google Maps</a>
+</header>
+<!-- End of header -->
+
+<div id="liftCon">
+<div>
+  <div id="leftCon" class="row">
+    <!-- Images of developers -->
+      <div class="col s5">
+              <!-- Jasmin -->
+        <div class="row">
+            <div id="devPic1" class="col s6">
+              <img src="./CSS/jasmin.jpeg" alt="image 1" onclick="myFunction1()" width="150x150" class="thumbnail z-depth-5"  id="devPic1"/>
+            </div>
+            <!-- Keshav -->
+            <div id="devPic2" class="col s6">
+              <img src="./CSS/jasmin.jpeg" alt="image 2" onclick="myFunction2()" width="150x150" class="thumbnail z-depth-5" id="devPic2"/> 
+            </div>
+        </div>
+            <!-- Karna -->
+        <div class="row">
+            <div id="devPic3" class="col s6">
+              <img src="./CSS/jasmin.jpeg" alt="image 3" onclick="myFunction3()"  width="150x150" class="thumbnail z-depth-5" id="devPic3"/> 
+            </div>
+            <!-- Asad -->
+            <div id="devPic4" class="col s6">
+              <img src="./CSS/jasmin.jpeg" alt="image 4" onclick="myFunction4()"  width="150x150" class="thumbnail z-depth-5" id="devPic4"/> 
+            </div>
+          </div>
+      </div>
+    <!-- End of images of developers -->
+    
+    <!-- Beginning of descriptions -->
+    
+      <div class="col s7">
+          <div id="aboutDev">
+    <!-- About Us Description -->
+            <div id="aboutUs" style="display:block;">
+              <h1 align="center"> <b>About Us</b></h1>
+              <p>About us. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
+            </div>
+    <!-- About Jasmin -->
+            <div id="jasmin" style="display:none;">
+              <h1>Jasmin Rowdy</h1>
+              <p>Hello my name is Jasmin. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
+                   <div class="row">
+                      <div class="col s4">
+                            <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
+                            <a href="https://github.com/">Github Profile</a>
+                      </div>
+                      <div class="col s3">
+                        <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
+                          <a href="https://www.linkedin.com/">LinkedIn</a>
+                    </div>
+                      <div class="col s5">
+                        <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
+                        <a href="#">jrowdy@wcpss.net</a>
+                      </div>
+                   </div>
+            </div>
+    <!-- About Keshav -->
+            <div id="keshav" style="display:none;">
+              <h1>Keshav Savva</h1>
+              <p>Keshav. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
+              <div class="row">
+                <div class="col s4">
+                      <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
+                      <a href="https://github.com/">Github Profile</a>
+                </div>
+                <div class="col s3">
+                  <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
+                    <a href="https://www.linkedin.com/">LinkedIn</a>
+              </div>
+                <div class="col s5">
+                  <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
+                  <a href="#">email@gmail.com</a>
+                </div>
+             </div>
+            </div>
+    <!-- About Karna -->
+            <div id="karna" style="display:none;">
+              <h1>Karna Cutolo</h1>
+              <p>Karna. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
+              <div class="row">
+                <div class="col s4">
+                      <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
+                      <a href="https://github.com/">Github Profile</a>
+                </div>
+                <div class="col s3">
+                  <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
+                    <a href="https://www.linkedin.com/">LinkedIn</a>
+              </div>
+                <div class="col s5">
+                  <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
+                  <a href="#">email@gmail.com</a>
+                </div>
+             </div>
+            </div>
+    <!-- About Asad -->
+            <div id="asad" style="display:none;">
+              <h1>Asad Rauf</h1>
+              <p>Asad. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
+              <div class="row">
+                <div class="col s4">
+                      <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
+                      <a href="https://github.com/">Github Profile</a>
+                </div>
+                <div class="col s3">
+                  <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
+                    <a href="https://www.linkedin.com/">LinkedIn</a>
+              </div>
+                <div class="col s5">
+                  <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
+                  <a href="#">email@gmail.com</a>
+                </div>
+             </div>
+            </div>
+          </div>
+      </div>
+    </div>
   </div>
+    <!-- End of developer descriptions -->
+    <hr>
+    
+    <!-- Office Hours & Address Starts here. First column is left blank for now.-->
+    <div class="row">
+          <div class="col s2"></div>
+
+          <div class="col s4">
+            <h3 id="subtitle" align="center">UNC Coding Boot Camp</h3>
+            <p align="center">1008 Parkside Main St, Cary, NC 27519</p>
+            <img src="./Assets/map.png" id="map" alt="Satellite Image" width="200px" height="200px"> 
+            <br>
+            <a id="maplink" href="https://www.google.com/maps/place/1008+Parkside+Main+St,+Cary,+NC+27519/@35.8462661,-78.8879498,549m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89acee885012a3db:0x8542c9a16f7585b3!8m2!3d35.8462661!4d-78.8857611">Google Maps</a>
+        </div>
+
+        <div class="col s4">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h5 align="center">--Office Hours--</h5>
+          <p align="center">Tuesday: 6:30-9:30 PM</p>
+          <p align="center">Thursday: 6:30-9:30 PM</p>
+          <p align="center">Saturday: 10-2 PM</p>
+        </div>
+
+        <div class="col s2"></div>
+      
+    </div>
+    
+    <!--------Start of the Footer----->
+    <footer class="page-footer N/A transparent">
+      <div class="container col s12">
+          <div class="col s12 center-align">
+            <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventFoot center-align" style="padding-bottom: 10px;"></a>
+            <p class="black-text text-lighten-4 center-align" style="margin: 0px; padding-bottom: 5px; font-weight: bold;">FOLLOW US</p>
+          </div>
+          <div class="container col s12">
+              <div class="row center-align" style="margin: 0px; font-size: 16px; font-weight: bold;" id="socLinks">
+                      <a href="https://www.facebook.com/"><i class="fab fa-facebook" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                      <a href="https://www.youtube.com/"><i class="fab fa-youtube" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                      <a href="https://instagram.com/"><i class="fab fa-instagram" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                      <a href="https://twitter.com/"><i class="fab fa-twitter" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                      <a href="https://linkedin.com/"><i class="fab fa-linkedin" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <div class="container center-align" id="ftrCpy"style="width: 100%; color: black; padding: 0px;">
+              Copyright ©2020 All rights reserved | This is my Project-1
+              <a href="#"><span style="color: black">Team-3</span></a>
+          </div>
+      </div>
+    </footer>              
+    <!--------End of the footer------->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="more.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
 </div>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="more.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
