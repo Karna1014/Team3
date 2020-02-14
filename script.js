@@ -35,7 +35,7 @@ var searchInfo = JSON.parse(localStorage.getItem("searchInfo")) || []
 if(searchInfo.length) {
 	searchInfo.forEach(function(d) {
 		$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + d.eventType + ' in ' + d.cityName + '</button></li>');
-	});
+	});	
 }	
 //Converts 1st letter to cap
 $("#submit").on("click", function() {
@@ -69,8 +69,12 @@ function populateQueryHist(name, type) {
 
 		if (valExist === false) {
 			searchInfo.push(itemToAdd);
+<<<<<<< HEAD
 			$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + d.eventType + ' in ' + d.cityName + '</button></li>');
 			// $("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')">' + name + ' ' + type + '</li>');
+=======
+			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + name + ' ' + type + '</button></li>');
+>>>>>>> master
 		}
 	
   
@@ -99,5 +103,12 @@ function reSearch(cityName, eventType) {
 	$("#icon2").addClass("active");
 
 	$("#submit").trigger("click");
+	
 }
+
+
+	function clearLocalStorage(){
+		localStorage.clear();
+		window.location.reload();
+	  }
 

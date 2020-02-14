@@ -295,3 +295,15 @@ p {
   }
   
 }
+
+/* clear history */
+#clearHistory{
+  border-radius: 5px;
+  width: 60px;
+  margin-left: 5px;
+}
+#clearHistory:hover{
+  background-color: red;
+  color: white;
+  
+}
