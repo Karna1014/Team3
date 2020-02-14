@@ -1,3 +1,5 @@
+
+
 const startBtnEl = document.getElementById('startBtn');
 const Img1El = document.getElementById('landingImg1');
 const Img2E2 = document.getElementById('landingImg2');
@@ -24,14 +26,14 @@ if(Img3E3 != null) {
 		document.location.href = "eventapp.html";
 	});
 }
-
+// pull history or create empty array
 var searchInfo = JSON.parse(localStorage.getItem("searchInfo")) || []
 if(searchInfo.length) {
 	searchInfo.forEach(function(d) {
 		$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + d.eventType + ' in ' + d.cityName + '</button></li>');
 	});
 }	
-
+//Converts 1st letter to cap
 $("#submit").on("click", function() {
     var cityName = uppercase($(".location").val());
     var typeOfEvent = uppercase($(".interests").val());
@@ -48,7 +50,7 @@ function populateResults(cityName, typeOfEvent) {
     
     populateQueryHist(cityName, typeOfEvent);
 }
-
+//Check for repeats on list
 function populateQueryHist(name, type) {
 	var itemToAdd = {"cityName": name, "eventType": type};
 		
@@ -79,7 +81,7 @@ function uppercase(cityName) {
     }
     return newarray1.join(' ');
 }
-
+// on click for utilizing history re-populates fields
 function reSearch(cityName, eventType) {
 	$(".location").val(cityName);
 	$(".location").addClass("active");

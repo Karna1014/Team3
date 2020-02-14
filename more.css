@@ -1,0 +1,91 @@
+
+body {
+background-image: url('Assets/bodyback.png');
+background-size: cover;
+}
+
+#devTitle {
+    font-size: 22px;
+}
+
+hr {
+    height: 5px solid grey;
+}
+
+#devPic1, #devPic2, #devPic3, #devPic4 {
+    padding: 0px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#map {
+    margin-left: 110px;
+    border: black solid 2px;
+}
+
+#maplink {
+    margin-left: 165px;
+}
+
+#asad, #karna, #jasmin, #keshav, #aboutUs {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+#subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-weight: 500;
+}
+#leftCon {
+    padding-top: 40px;
+    padding-left: 120px;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:200px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+header, #title {
+    margin-bottom: 10px;
+    font-family: 'Monoton', cursive;
+    animation: mymove 3s infinite;
+    font-size: 50px;
+}
+
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px rgb(18, 201, 233);}
+}
+/* Start of the footer */
+
+.footer-copyright {
+    background: url("../Assets/bodyback.png");
+  }
+  
+  #ftrIcon {
+    font-size: 22px;
+    padding: 2rem;
+    color: red;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #ftrIcon:hover {
+    color: rgb(131, 145, 190);
+  }
+  
+  /* End of the footer */

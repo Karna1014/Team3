@@ -1,23 +1,36 @@
-# Team3
+
 ### EVENT BRITE
+
+# Team3
+    * Asad Ruad
+    * Jasmin Rowdy
+    * Keshav Avva
+    * Karna Cutolo
 
 **Description:**
 
-In this world of 
+In this world of business, shortcuts are the way to go.  Our App is one of those shortcuts!  It will help plan your day off, weekend, or vacation.  
 
-This application will:
+This application will allow you enter your interests and a city and it will return all the ticketed events from your search.  It will save your previous search history and allow you to re-search them at will. 
 
-Requirements met:
+**Requirements met:**
 
-1.  
-2. 
-3. 
-4. 
-5. 
+1. Use of at least, two server-side API's (Ticketmaster, MapQuest) 
+2. Use of a CSS framework other than BootStrap (Materialize)
+3. Must be interactive
+4. Use of at least one new 3rd Party API (LoDash)
+5. Good Quality Coding Standards
+6. Polished UI
+
+**Technologies Used:**
+
+    * HTML, JavaScript, jQuery, Materialize
+    * Ticketmaster API, MapQuest API, LoDash API
 
 
+**Potential Areas for Development:**
 
-Usage:
+As we are in the infancy of its development, the opportunities for growth are plentiful.  
 
 
 
@@ -25,11 +38,11 @@ Usage:
 
 1. Index.html
     
-    Landing Page - 
+    Landing Page  
 
 2. Script.js    
     
-    Javascript for Main Page 
+    Javascript for Landing Page and History list
 
 3. Eventapp.html      
 
@@ -39,27 +52,19 @@ Usage:
 
     Javascript for Main Page
 
-5. Faq.html         
+5. Faq.html  
 
+    Most frequently asked questions
    
+6. Style.css         
 
-6. Faq.js         
+    Stylesheet for Landing Page, Faq Page
 
-    Javascript for
-    
-7. Style.css         
-
-    Stylesheet for Landing Page
-
-8. Eventapp.css
+7. Eventapp.css
 
     Stylesheet for Main Page
 
-9. Faq.css
-
-
-
-10. Reset.css
+8. Reset.css
 
     Compressed set of CSS rules that resets the styling of all HTML elements to a consistent baseline.
 

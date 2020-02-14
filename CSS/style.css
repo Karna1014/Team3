@@ -110,8 +110,13 @@ h1 {
 #ftrIcon:hover {
   color: rgb(131, 145, 190);
 }
+#matIcons:hover{
+  color: rgb(131, 145, 190);
 
+  
+}
 /* End of the footer */
+
 
 @media screen and (max-width: 1240px) {
   h6 {
@@ -158,6 +163,14 @@ h1 {
     font-size: 2.4rem;
   }  
  
+=======/* paragrapgh css */
+
+h6{
+  line-height: 1.3;
   
 }
+
+/* added hover to materialize icons for search */
+
+
 
