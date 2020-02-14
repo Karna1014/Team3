@@ -141,20 +141,24 @@ body {
     
   }
 
+  .datepicker-table td.is-today {
+    color: #3f51b5;
+  }
   .datepicker-date-display {
-    background-color:#3f51b5;
+    background-color: #3f51b5;
     color: #ffffff;
   }
+  .datepicker-table td.is-selected {
+    background-color: red;
+  }
   .datepicker-cancel, .datepicker-done {
-    color:#3f51b5;
+    color: rgb(63, 81, 181);
     font-weight: bold;
   }
  
   /* .datepicker-table td.is-selected{
     background-color: red;
   } */
-
-  
 
 
   .moreInfoBtn{
