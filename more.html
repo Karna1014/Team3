@@ -6,17 +6,15 @@
         <link type="text/css" rel="stylesheet" href="CSS/material.css"  media="screen,projection"/>
         
 
-        <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Monoton|Shadows+Into+Light&display=swap" rel="stylesheet"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
         <link href="https://fonts.googleapis.com/css?family=Monoton|Righteous|Shadows+Into+Light&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="more.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-------link to Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     </head>
@@ -37,7 +35,7 @@
     </div>
 </nav>
 <!-- End of Nav Bar -->
-<br>
+
 <!-- Start of header -->
 </header>
 <h1 id="title" align="center">About &nbsp; the &nbsp; Developers</h1>
@@ -46,10 +44,11 @@
 </header>
 <!-- End of header -->
 
-<div class="container">
+<div id="liftCon">
+<div>
   <div id="leftCon" class="row">
     <!-- Images of developers -->
-      <div class="col s6">
+      <div class="col s5">
               <!-- Jasmin -->
         <div class="row">
             <div id="devPic1" class="col s6">
@@ -75,12 +74,12 @@
     
     <!-- Beginning of descriptions -->
     
-      <div class="col s6">
+      <div class="col s7">
           <div id="aboutDev">
     <!-- About Us Description -->
             <div id="aboutUs" style="display:block;">
-              <h1 align="center">About Us</h1>
-              <p>Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
+              <h1 align="center"> <b>About Us</b></h1>
+              <p>About us. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
             </div>
     <!-- About Jasmin -->
             <div id="jasmin" style="display:none;">
@@ -140,11 +139,11 @@
              </div>
             </div>
     <!-- About Asad -->
-            <div id="asad" class="collapse">
+            <div id="asad" style="display:none;">
               <h1>Asad Rauf</h1>
               <p>Asad. Vestibulum maximus lacus ac purus egestas ultrices. Suspendisse nec nulla nibh. Vivamus euismod lorem elit, sit amet iaculis augue molestie ac. Aliquam ac orci venenatis, tristique enim sed, congue dui. Praesent sodales rutrum pellentesque. Integer molestie egestas lorem, quis dapibus magna scelerisque nec. Aliquam vel tempor nisi, sed ultrices sapien.</p>
               <div class="row">
-                <div class="col s3">
+                <div class="col s4">
                       <img src="./Assets/github.png" alt="Github Logo" width="50px" height="50px">
                       <a href="https://github.com/">Github Profile</a>
                 </div>
@@ -152,7 +151,7 @@
                   <img src="./Assets/linkedin.png" alt="LinkedIn Logo" width="50px" height="50px">
                     <a href="https://www.linkedin.com/">LinkedIn</a>
               </div>
-                <div class="col s6">
+                <div class="col s5">
                   <img src="./Assets/email.png" alt="Email Logo" width="50px" height="50px">
                   <a href="#">email@gmail.com</a>
                 </div>
@@ -161,25 +160,35 @@
           </div>
       </div>
     </div>
+  </div>
     <!-- End of developer descriptions -->
     <hr>
     
     <!-- Office Hours & Address Starts here. First column is left blank for now.-->
     <div class="row">
-      <div class="col s4"></div>
-      <div class="col s4">
-        <h5 align="center">--Office Hours--</h5>
-        <p align="center">Tuesday: 6:30-9:30 PM</p>
-        <p align="center">Thursday: 6:30-9:30 PM</p>
-        <p align="center">Saturday: 10-2 PM</p>
-    </div>
-      <div class="col s4">
-          <h3 id="subtitle" align="center">UNC Coding Boot Camp</h3>
-          <p align="center">1008 Parkside Main St, Cary, NC 27519</p>
-          <img src="./Assets/map.png" id="map" alt="Satellite Image" width="200px" height="200px"> 
+          <div class="col s2"></div>
+
+          <div class="col s4">
+            <h3 id="subtitle" align="center">UNC Coding Boot Camp</h3>
+            <p align="center">1008 Parkside Main St, Cary, NC 27519</p>
+            <img src="./Assets/map.png" id="map" alt="Satellite Image" width="200px" height="200px"> 
+            <br>
+            <a id="maplink" href="https://www.google.com/maps/place/1008+Parkside+Main+St,+Cary,+NC+27519/@35.8462661,-78.8879498,549m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89acee885012a3db:0x8542c9a16f7585b3!8m2!3d35.8462661!4d-78.8857611">Google Maps</a>
+        </div>
+
+        <div class="col s4">
           <br>
-          <a id="maplink" href="https://www.google.com/maps/place/1008+Parkside+Main+St,+Cary,+NC+27519/@35.8462661,-78.8879498,549m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89acee885012a3db:0x8542c9a16f7585b3!8m2!3d35.8462661!4d-78.8857611">Google Maps</a>
-      </div>
+          <br>
+          <br>
+          <br>
+          <h5 align="center">--Office Hours--</h5>
+          <p align="center">Tuesday: 6:30-9:30 PM</p>
+          <p align="center">Thursday: 6:30-9:30 PM</p>
+          <p align="center">Saturday: 10-2 PM</p>
+        </div>
+
+        <div class="col s2"></div>
+      
     </div>
     
     <!--------Start of the Footer----->
