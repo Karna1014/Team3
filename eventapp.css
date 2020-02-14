@@ -13,7 +13,7 @@ body {
     
 }
 .addInfo:hover{
-    border: 2px solid red;
+    border: 2px solid rgb(255, 73, 73);
 }
 
 .container {
@@ -43,7 +43,7 @@ body {
   }
 
   #mainArea:hover{
-    border: 2px solid red;
+    border: 2px solid rgb(255, 73, 73);
   }
   #main-area{
     /* width: 55%; */
@@ -140,7 +140,7 @@ p {
   }
 
   #icon1, #icon2 {
-    color: red;
+    color: rgb(255, 73, 73);
   }
 
   #submit {
@@ -150,7 +150,7 @@ p {
     font-size: 17px;
     font-family: 'Monoton', cursive;
     color: whitesmoke;
-    background-attachment: red;
+    background-attachment: rgb(255, 73, 73);
     
   }
 
@@ -160,7 +160,7 @@ p {
   .moreInfoBtn{
     margin-left: 10px;
     margin-top: -20px;
-    background-color: red;
+    background-color: rgb(255, 73, 73);
     color: white;
     border-radius: 8px;
     height: 30px;
@@ -192,11 +192,17 @@ p {
 .full {
   width: 95%;
   margin: 1%;
+  background-color: whitesmoke;
+  color: black;
+}
+.full:hover {
+  background-color: rgb(255, 73, 73);
+  color: white;
 }
 #ftrIcon {
   font-size: 22px;
   padding: 2rem;
-  color: red;
+  color: rgb(255, 73, 73);
   padding-top: 5px;
 }
 
