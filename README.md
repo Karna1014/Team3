@@ -9,7 +9,7 @@
 
 **Description:**
 
-In this world of business, shortcuts are the way to go.  Our App is one of those shortcuts!  It will help plan your day off, weekend, or vacation.  
+In this world of busyness, shortcuts are the way to go.  Our App is one of those shortcuts!  It will help plan your day off, weekend, or vacation.  
 
 This application will allow you enter your interests and a city and it will return all the ticketed events from your search.  It will save your previous search history and allow you to re-search them at will. 
 
