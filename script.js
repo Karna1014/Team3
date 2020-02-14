@@ -33,7 +33,7 @@ if(searchInfo.length) {
 		$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')"><p style="float:left">' + d.cityName + '</p><p style="float:right">' + d.eventType + '</p></li>');
 	});
 }	
-
+//Converts 1st letter to cap
 $("#submit").on("click", function() {
     var cityName = uppercase($(".location").val());
     var typeOfEvent = uppercase($(".interests").val());
@@ -50,7 +50,7 @@ function populateResults(cityName, typeOfEvent) {
     
     populateQueryHist(cityName, typeOfEvent);
 }
-
+//Check for repeats on list
 function populateQueryHist(name, type) {
 	var itemToAdd = {"cityName": name, "eventType": type};
 		
