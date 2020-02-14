@@ -113,5 +113,17 @@ h1 {
 
 /* End of the footer */
 
+/* paragrapgh css */
 
+h6{
+  line-height: 1.3;
+  
+}
+
+/* added hover to materialize icons for search */
+
+#matIcons:hover{
+  color: rgb(131, 145, 190);
+  
+}
 
