@@ -83,7 +83,13 @@ body {
 } 
   
   /* Clear floats after the columns */
-  
+ 
+  .clearBtn {
+    background-color: #3f51b5;
+    color: white;
+    border-radius: 8px;
+    height: 25px;
+  }
 h4 {
   margin: 2.5%
 }
@@ -180,7 +186,13 @@ p {
 .footer-copyright {
   background: url("../Assets/bodyback.png");
 }
-
+#searchList {
+  text-align: center;
+}
+.full {
+  width: 95%;
+  margin: 1%;
+}
 #ftrIcon {
   font-size: 22px;
   padding: 2rem;

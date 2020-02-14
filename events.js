@@ -133,8 +133,6 @@ $(document).ready(function(){
     console.log(startDate);
     var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&startDateTime=" + startDate + "&endDateTime=" + endDate +"&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
 
-    // var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "&keyword=" + eventType + "&apikey=5bcwmAqxVSJXdaklNuDJWfb2QRKnAXZD";
-    
     console.log(queryURL);
     $.ajax({
         url: queryURL,
@@ -206,7 +204,7 @@ $(document).ready(function(){
             $(".addInfoDiv").empty();
             $(".addInfoDiv").append(newInfoDiv);
             var infoName = $("<h4>").text(pageInfo[listIndex].name);
-            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X").attr("style", "float: right; margin: 1%; background-color: red; color: white");
+            var clearBtn =$("<button>").addClass("clearBtn").attr("type", "clear").text("X").attr("style", "float: right; margin: 1%; background-color: #3f51b5; border: none; color: white");
             var infoDescription = $("<p>").text(pageInfo[listIndex].description);
             var br = $("<br>");
             newInfoDiv.append(clearBtn, br, infoName, infoDescription);

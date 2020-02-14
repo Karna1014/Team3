@@ -28,7 +28,7 @@ if(Img3E3 != null) {
 var searchInfo = JSON.parse(localStorage.getItem("searchInfo")) || []
 if(searchInfo.length) {
 	searchInfo.forEach(function(d) {
-		$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')"><p style="float:left">' + d.cityName + '</p><p style="float:right">' + d.eventType + '</p></li>');
+		$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')"><button class="full moreInfoBtn">' + d.eventType + ' in ' + d.cityName + '</button></li>');
 	});
 }	
 
