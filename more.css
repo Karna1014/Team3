@@ -3,6 +3,10 @@ background-image: url('Assets/bodyback.png');
 background-size: cover;
 }
 
+#devTitle {
+    font-family: 'Righteous', cursive;
+}
+
 #devPic1, #devPic2, #devPic3, #devPic4 {
     padding: 0px;
     margin: 0 auto;
@@ -42,6 +46,7 @@ header, #title {
     margin-bottom: 10px;
     font-family: 'Monoton', cursive;
     animation: mymove 3s infinite;
+    font-size: 60px;
 }
 
 @keyframes mymove {
