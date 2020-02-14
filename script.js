@@ -1,31 +1,35 @@
 
 
-const startBtnEl = document.getElementById('startBtn');
-const Img1El = document.getElementById('landingImg1');
-const Img2E2 = document.getElementById('landingImg2');
-const Img3E3 = document.getElementById('landingImg3');
+// const startBtnEl = document.getElementById('startBtn');
+// const Img1El = document.getElementById('landingImg1');
+// const Img2E2 = document.getElementById('landingImg2');
+// const Img3E3 = document.getElementById('landingImg3');
 
-if(startBtnEl != null) {
-	startBtnEl.addEventListener('click', function() {
-		document.location.href = "eventapp.html";
-	});
-}
-if(Img1El != null) {
-	Img1El.addEventListener('click', function() {
-		document.location.href = "eventapp.html";
-	});
-}
-if(Img2E2 != null) {
-	Img2E2.addEventListener('click', function() {
-		document.location.href = "eventapp.html";
-	});
-}
+// if(startBtnEl != null) {
+// 	startBtnEl.addEventListener('click', function() {
+// 		document.location.href = "eventapp.html";
+// 	});
+// }
+// if(Img1El != null) {
+// 	Img1El.addEventListener('click', function() {
+// 		document.location.href = "eventapp.html";
+// 	});
+// }
+// if(Img2E2 != null) {
+// 	Img2E2.addEventListener('click', function() {
+// 		document.location.href = "eventapp.html";
+// 	});
+// }
 
-if(Img3E3 != null) {
-	Img3E3.addEventListener('click', function() {
-		document.location.href = "eventapp.html";
-	});
-}
+// if(Img3E3 != null) {
+// 	Img3E3.addEventListener('click', function() {
+// 		document.location.href = "eventapp.html";
+// 	});
+// }
+
+
+
+
 // pull history or create empty array
 var searchInfo = JSON.parse(localStorage.getItem("searchInfo")) || []
 if(searchInfo.length) {
@@ -41,8 +45,8 @@ $("#submit").on("click", function() {
 	
 	if (cityName != "" && typeOfEvent != "") {
 		populateResults(cityName, typeOfEvent);	
-		
 	}
+	
 });
 
 function populateResults(cityName, typeOfEvent) {
@@ -65,7 +69,8 @@ function populateQueryHist(name, type) {
 
 		if (valExist === false) {
 			searchInfo.push(itemToAdd);
-			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')">' + name + ' ' + type + '</li>');
+			$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + d.eventType + ' in ' + d.cityName + '</button></li>');
+			// $("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')">' + name + ' ' + type + '</li>');
 		}
 	
   

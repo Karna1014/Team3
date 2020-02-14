@@ -1,8 +1,8 @@
 
-### EVENT BRITE
+### EventHub
 
 # Team3
-    * Asad Ruad
+    * Asad Ruaf
     * Jasmin Rowdy
     * Keshav Avva
     * Karna Cutolo
@@ -18,7 +18,7 @@ This application will allow you enter your interests and a city and it will retu
 1. Use of at least, two server-side API's (Ticketmaster, MapQuest) 
 2. Use of a CSS framework other than BootStrap (Materialize)
 3. Must be interactive
-4. Use of at least one new 3rd Party API (LoDash)
+4. Use of at least one new 3rd Party API (Lodash)
 5. Good Quality Coding Standards
 6. Polished UI
 
@@ -63,6 +63,18 @@ As we are in the infancy of its development, the opportunities for growth are pl
 7. Eventapp.css
 
     Stylesheet for Main Page
+
+8. More.html
+
+    About the Developers
+
+9. More.css
+
+    Stylesheet for More Page
+
+10. More.js
+
+    Javascript for More Page
 
 8. Reset.css
 
