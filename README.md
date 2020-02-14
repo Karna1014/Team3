@@ -86,18 +86,28 @@ Link to site
 # https://karna1014.github.io//
 
 
-## Landing Page
+## Landing Page                         |   ## Main Page
+:--------------------------------------:|:-----------------------------------:
+![Landing Page](./Assets.Index.png)     |   ![Main Page](./Assets.Event.png)
 
-![Landing Page]()
 
-## Main Page
 
-![Main Page]()
+## Main Page w/ More Info               |   ## Faq Page
+:--------------------------------------:|:-----------------------------------:
+![More Info](./Assets.Event+more.png)   |   ![Faq Page](./Assets.Faq.png)
 
-## Responsive Image I-Pad
 
-![]()
 
-## Responsive Image I-Phone 6-7-8
+## Responsive Image I-Pad               |   ## More Page
+:--------------------------------------:|:-----------------------------------:
+![I-Pad View](./Assets.I-PadView.png)   |   ![More Page](./Assets..png)
 
-![]()
+
+
+
+
+
+
+
+
+
