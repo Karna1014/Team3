@@ -72,7 +72,7 @@ header, #title {
   50% {text-shadow: 10px 20px 30px rgb(233, 18, 18);}
 }
 
-form .submit {
+#submit {
     background: red;
     color: #fff;
     font-size: 20px;
@@ -83,7 +83,19 @@ form .submit {
     margin-left: 130px;
 }
 
-form .submit:hover {
+#reset {
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+#submit:hover, #reset:hover {
     background-color: #e2544a;
     cursor: pointer;
 }
@@ -91,7 +103,7 @@ form .submit:hover {
 /* Start of the footer */
 
 .footer-copyright {
-    background: url("../Assets/bodyback.png");
+    background: url("./Assets/bodyback.png");
   }
   
   #ftrIcon {
