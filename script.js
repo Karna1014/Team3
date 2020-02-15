@@ -18,7 +18,11 @@ $("#submit").on("click", function() {
 	
 	
 	if (cityName != "" && typeOfEvent != "") {
+<<<<<<< HEAD
+		$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + cityName + '\',\'' + typeOfEvent + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + typeOfEvent + ' in ' + cityName + '</button></li>');
+=======
 		populateResults(cityName, typeOfEvent);	
+>>>>>>> master
 	}
 	
 });
