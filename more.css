@@ -1,6 +1,6 @@
 
 body {
-background-image: url('Assets/bodyback.png');
+background-image: url('./Assets/bodyback.png');
 background-size: cover;
 }
 
@@ -17,6 +17,8 @@ hr {
     margin: 0 auto;
     border-radius: 20px;
 }
+
+
 
 #map {
     margin-left: 110px;
@@ -67,8 +69,25 @@ header, #title {
 }
 
 @keyframes mymove {
-  50% {text-shadow: 10px 20px 30px rgb(18, 201, 233);}
+  50% {text-shadow: 10px 20px 30px rgb(233, 18, 18);}
 }
+
+form .submit {
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 130px;
+}
+
+form .submit:hover {
+    background-color: #e2544a;
+    cursor: pointer;
+}
+
 /* Start of the footer */
 
 .footer-copyright {
