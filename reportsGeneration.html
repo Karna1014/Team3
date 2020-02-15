@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>My Chart.js Chart</title>
+</head>
+<body>
+  <button class="btn" id="btn" onclick="chart1();">Upcomming Events</button>
+  <button class="btn" id="btn2" onclick="chart2();">Events venues</button>
+  <button class="btn" id="btn3" onclick="chart3();">Tickets sold</button>
+  <button class="btn" id="btn4" onclick="chart4();">Venues Location</button>
+  <div class="container">
+    <canvas id="cities" width="500" height="200"></canvas>
+    <canvas id="venues" width="500" height="200"></canvas>
+    <canvas id="tickets" width="500" height="200"></canvas>
+    <canvas id="venuesLocation" width="500" height="200"></canvas>
+  </div>
+
+  <script>
+    var cities = document.getElementById('cities');
+    var venues = document.getElementById('venues');
+    var tickets = document.getElementById('tickets');
+    var venuesLocation = document.getElementById('venuesLocation');
+
+
+    function chart1(){
+
+    var myChart = new Chart(cities, {
+      type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+      data:{
+        labels:['Buffalo', 'Indio', 'Oakland', 'El Paso', 'Saint Paul', 'Los Angeles', 'Memphis', 'Raleigh',
+         'California', 'New Jersey'],
+        datasets:[{
+          label:'Number of upcomming events',
+          data:[
+            27,
+            2,
+            82,
+            23,
+            15,
+            46,
+            2,
+            19,
+            20,
+            9
+          ],
+          //backgroundColor:'green',
+          backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+            'rgba(255, 99, 132, 0.6)'
+          ],
+          borderWidth:1,
+          borderColor:'#777',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#000'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'Upcomming Events in Multiple Cities',
+          fontSize:25
+        }}
+    });
+    }
+
+    function chart2(){
+
+var myChart1 = new Chart(venues, {
+  type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+  data:{
+    labels:['Empire Polo Field', 'KeyBank Center', 'RingCentral Coliseum', 'Empire Polo Field', 'Sun Bowl Stadium', 
+    'Xcel Energy Center', 'STAPLES Center', 'FedExForum'],
+    datasets:[{
+      label:'Number of events in multiple venues',
+      data:[
+        2,
+        31,
+        84,
+        22,
+        2,
+        77,
+        68,
+        28,
+        20,
+        9
+      ],
+      //backgroundColor:'green',
+      backgroundColor:[
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(75, 192, 192, 0.6)',
+        'rgba(153, 102, 255, 0.6)',
+        'rgba(255, 159, 64, 0.6)',
+        'rgba(255, 99, 132, 0.6)'
+      ],
+      borderWidth:1,
+      borderColor:'#777',
+      hoverBorderWidth:3,
+      hoverBorderColor:'#000'
+    }]
+  },
+  options:{
+    title:{
+      display:true,
+      text:'Upcomming Events in Multiple Venues',
+      fontSize:25
+    }}
+});
+}
+
+function chart3(){
+
+var myChart = new Chart(tickets, {
+  type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+  data:{
+    labels:['America/New_York', 'America/Los_Angeles', 'America/Denver', 'America/Chicago', 'America/Los_Angeles', 'America/Chicago',
+     ],
+    datasets:[{
+      label:'Number of total tickets solds in cities',
+      data:[
+        24,
+        92,
+        82,
+        12,
+        9,
+        15
+      ],
+      //backgroundColor:'green',
+      backgroundColor:[
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(75, 192, 192, 0.6)',
+        'rgba(153, 102, 255, 0.6)',
+        'rgba(255, 159, 64, 0.6)',
+        'rgba(255, 99, 132, 0.6)'
+      ],
+      borderWidth:1,
+      borderColor:'#777',
+      hoverBorderWidth:3,
+      hoverBorderColor:'#000'
+    }]
+  },
+  options:{
+    title:{
+      display:true,
+      text:'Sold Tickets in different cities',
+      fontSize:25
+    }}
+});
+}
+
+function chart4(){
+
+var myChart = new Chart(venuesLocation, {
+  type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+  data:{
+    labels:['One Seymour H. Knox III Plaza', '81800 Avenue 51', '7000 Coliseum Way', '2501 Sun Bowl Drive - UTEP Campus', '199 Kellogg Blvd', '1111 S. Figueroa St',
+    '191 Beale Street', ],
+    datasets:[{
+      label:'Number Tickets solds in different venues',
+      data:[
+        31,
+        60,
+        55,
+        18,
+        35,
+        15
+      ],
+      //backgroundColor:'green',
+      backgroundColor:[
+        'rgba(255, 99, 132, 0.6)',
+        'rgba(54, 162, 235, 0.6)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(75, 192, 192, 0.6)',
+        'rgba(153, 102, 255, 0.6)',
+        'rgba(255, 159, 64, 0.6)',
+        'rgba(255, 99, 132, 0.6)'
+      ],
+      borderWidth:1,
+      borderColor:'#777',
+      hoverBorderWidth:3,
+      hoverBorderColor:'#000'
+    }]
+  },
+  options:{
+    title:{
+      display:true,
+      text:'Tickets solds comparison regarding venues',
+      fontSize:25
+    }}
+});
+}
+  </script>
+</body>
+</html>
