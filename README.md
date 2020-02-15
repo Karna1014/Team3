@@ -32,6 +32,10 @@ This application will allow you enter your interests and a city and it will retu
 
 As we are in the infancy of its development, the opportunities for growth are plentiful.  
 
+1. We can build the platform utilizing other API's
+2. We can offer the option of linking to purchasing agents
+3. We can potentially offer demographics to promoters for future events.
+
 
 
 ### File List:
