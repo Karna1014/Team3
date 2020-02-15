@@ -102,10 +102,6 @@ Link to site
 
 ![Faq Page](./Assets.Faq.png)
 
-## More Page
-
-![More Page](./Assets..png)
-
 ## Responsive Image I-Pad                  
 
 ![I-Pad View](./Assets.I-PadView.png) 
