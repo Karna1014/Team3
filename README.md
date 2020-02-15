@@ -88,23 +88,23 @@ Link to site
 
 ## Landing Page                            
 
-![Landing Page](./Assets.Index.png)    
+![Landing Page](./Assets/Index.png)   
 
 ## Main Page
    
-![Main Page](../Assets.Event.png)
+![Main Page](./Assets/Event.png)
 
 ## Main Page w/ More Info                  
 
-![More Info](./Assets.Event+more.png) 
+![More Info](./Assets/Event+more.png) 
 
 ## Faq Page
 
-![Faq Page](./Assets.Faq.png)
+![Faq Page](./Assets/Faq.png)
 
 ## Responsive Image I-Pad                  
 
-![I-Pad View](./Assets.I-PadView.png) 
+![I-Pad View](./Assets/I-PadView.png) 
 
 
 
