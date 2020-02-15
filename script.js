@@ -1,31 +1,5 @@
 
 
-// const startBtnEl = document.getElementById('startBtn');
-// const Img1El = document.getElementById('landingImg1');
-// const Img2E2 = document.getElementById('landingImg2');
-// const Img3E3 = document.getElementById('landingImg3');
-
-// if(startBtnEl != null) {
-// 	startBtnEl.addEventListener('click', function() {
-// 		document.location.href = "eventapp.html";
-// 	});
-// }
-// if(Img1El != null) {
-// 	Img1El.addEventListener('click', function() {
-// 		document.location.href = "eventapp.html";
-// 	});
-// }
-// if(Img2E2 != null) {
-// 	Img2E2.addEventListener('click', function() {
-// 		document.location.href = "eventapp.html";
-// 	});
-// }
-
-// if(Img3E3 != null) {
-// 	Img3E3.addEventListener('click', function() {
-// 		document.location.href = "eventapp.html";
-// 	});
-// }
 
 
 
@@ -70,7 +44,8 @@ function populateQueryHist(name, type) {
 		if (valExist === false) {
 			searchInfo.push(itemToAdd);
 
-			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + name + ' ' + type + '</button></li>');
+			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + name + ' in ' + type + '</button></li>');
+
 		}
 	
   
