@@ -2,7 +2,7 @@
 ### EventHub
 
 # Team3
-    * Asad Ruaf
+    * Asad Rauf
     * Jasmin Rowdy
     * Keshav Avva
     * Karna Cutolo
@@ -87,7 +87,7 @@ As we are in the infancy of its development, the opportunities for growth are pl
 
 Link to site
 
-# https://karna1014.github.io//
+# https://karna1014.github.io/Team3/
 
 
 ## Landing Page                            
@@ -105,6 +105,9 @@ Link to site
 ## Faq Page
 
 ![Faq Page](./Assets/Faq.png)
+
+## About Us Page
+![About Us](./Assets/aboutusscreen.png)
 
 ## Responsive Image I-Pad                  
 
