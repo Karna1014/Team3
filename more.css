@@ -1,6 +1,6 @@
 
 body {
-background-image: url('Assets/bodyback.png');
+background-image: url('./Assets/bodyback.png');
 background-size: cover;
 }
 
@@ -17,6 +17,8 @@ hr {
     margin: 0 auto;
     border-radius: 20px;
 }
+
+
 
 #map {
     margin-left: 110px;
