@@ -1,15 +1,15 @@
 
-### EVENT BRITE
+### EventHub
 
 # Team3
-    * Asad Ruad
+    * Asad Ruaf
     * Jasmin Rowdy
     * Keshav Avva
     * Karna Cutolo
 
 **Description:**
 
-In this world of business, shortcuts are the way to go.  Our App is one of those shortcuts!  It will help plan your day off, weekend, or vacation.  
+In this world of busyness, shortcuts are the way to go.  Our App is one of those shortcuts!  It will help plan your day off, weekend, or vacation.  
 
 This application will allow you enter your interests and a city and it will return all the ticketed events from your search.  It will save your previous search history and allow you to re-search them at will. 
 
@@ -18,7 +18,7 @@ This application will allow you enter your interests and a city and it will retu
 1. Use of at least, two server-side API's (Ticketmaster, MapQuest) 
 2. Use of a CSS framework other than BootStrap (Materialize)
 3. Must be interactive
-4. Use of at least one new 3rd Party API (LoDash)
+4. Use of at least one new 3rd Party API (Lodash)
 5. Good Quality Coding Standards
 6. Polished UI
 
@@ -31,6 +31,10 @@ This application will allow you enter your interests and a city and it will retu
 **Potential Areas for Development:**
 
 As we are in the infancy of its development, the opportunities for growth are plentiful.  
+
+1. We can build the platform utilizing other API's
+2. We can offer the option of linking to purchasing agents
+3. We can potentially offer demographics to promoters for future events.
 
 
 
@@ -64,6 +68,18 @@ As we are in the infancy of its development, the opportunities for growth are pl
 
     Stylesheet for Main Page
 
+8. More.html
+
+    About the Developers
+
+9. More.css
+
+    Stylesheet for More Page
+
+10. More.js
+
+    Javascript for More Page
+
 8. Reset.css
 
     Compressed set of CSS rules that resets the styling of all HTML elements to a consistent baseline.
@@ -74,18 +90,34 @@ Link to site
 # https://karna1014.github.io//
 
 
-## Landing Page
+## Landing Page                            
 
-![Landing Page]()
+![Landing Page](./Assets/Index.png)   
 
 ## Main Page
+   
+![Main Page](./Assets/Event.png)
 
-![Main Page]()
+## Main Page w/ More Info                  
 
-## Responsive Image I-Pad
+![More Info](./Assets/Event+more.png) 
 
-![]()
+## Faq Page
 
-## Responsive Image I-Phone 6-7-8
+![Faq Page](./Assets/Faq.png)
 
-![]()
+## Responsive Image I-Pad                  
+
+![I-Pad View](./Assets/I-PadView.png) 
+
+
+
+
+
+
+
+
+
+
+
+

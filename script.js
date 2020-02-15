@@ -1,37 +1,15 @@
 
 
-const startBtnEl = document.getElementById('startBtn');
-const Img1El = document.getElementById('landingImg1');
-const Img2E2 = document.getElementById('landingImg2');
-const Img3E3 = document.getElementById('landingImg3');
 
-if(startBtnEl != null) {
-	startBtnEl.addEventListener('click', function() {
-		document.location.href = "eventapp.html";
-	});
-}
-if(Img1El != null) {
-	Img1El.addEventListener('click', function() {
-		document.location.href = "eventapp.html";
-	});
-}
-if(Img2E2 != null) {
-	Img2E2.addEventListener('click', function() {
-		document.location.href = "eventapp.html";
-	});
-}
 
-if(Img3E3 != null) {
-	Img3E3.addEventListener('click', function() {
-		document.location.href = "eventapp.html";
-	});
-}
+
+
 // pull history or create empty array
 var searchInfo = JSON.parse(localStorage.getItem("searchInfo")) || []
 if(searchInfo.length) {
 	searchInfo.forEach(function(d) {
 		$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + d.cityName + '\',\'' + d.eventType + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + d.eventType + ' in ' + d.cityName + '</button></li>');
-	});
+	});	
 }	
 //Converts 1st letter to cap
 $("#submit").on("click", function() {
@@ -40,8 +18,13 @@ $("#submit").on("click", function() {
 	
 	
 	if (cityName != "" && typeOfEvent != "") {
+<<<<<<< HEAD
 		$("#searchList").append('<li style="cursor: pointer; overflow: hidden; margin: 5px;" onclick="reSearch(\'' + cityName + '\',\'' + typeOfEvent + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + typeOfEvent + ' in ' + cityName + '</button></li>');
+=======
+		populateResults(cityName, typeOfEvent);	
+>>>>>>> master
 	}
+	
 });
 
 function populateResults(cityName, typeOfEvent) {
@@ -64,7 +47,9 @@ function populateQueryHist(name, type) {
 
 		if (valExist === false) {
 			searchInfo.push(itemToAdd);
-			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')">' + name + ' ' + type + '</li>');
+
+			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + name + ' in ' + type + '</button></li>');
+
 		}
 	
   
@@ -93,5 +78,12 @@ function reSearch(cityName, eventType) {
 	$("#icon2").addClass("active");
 
 	$("#submit").trigger("click");
+	
 }
+
+
+	function clearLocalStorage(){
+		localStorage.clear();
+		window.location.reload();
+	  }
 
