@@ -44,7 +44,7 @@ function populateQueryHist(name, type) {
 		if (valExist === false) {
 			searchInfo.push(itemToAdd);
 
-			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + name + ' in ' + type + '</button></li>');
+			$("#searchList").append('<li style="cursor: pointer;" onclick="reSearch(\'' + name + '\',\'' + type + '\')"><button class="full moreInfoBtn waves-light waves-effect">' + type + ' in ' + name + '</button></li>');
 
 		}
 	
