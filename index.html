@@ -24,21 +24,30 @@
 
     <body>
     <!--------Start NavBar Area--------> 
-    
-    <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper nav #3f51b5 indigo nav z-depth-5">
-                  <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventNav" style="margin: 10px;"></a>
-                    <ul id="nav-mobile" class="right logonav" style="float: right; font-size: 18px; font-weight: bold">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="eventapp.html">Events</a></li>
-                        <li><a href="faq.html">Faq</a></li>
-                        <li><a href="more.html">About Us</a></li>
-                    </ul>
-                </div>
-            </nav>
+
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!"><img src="./Assets/logo.png" height="40" width="100" alt"logo" 
+            class="brand-logo" style="margin: 10px;"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=
+            "material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down" id="nav-mobile" style="font-size: 18px;
+           font-weight: bold">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eventapp.html">Events</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="more.html">About Us</a></li>
+          </ul>
         </div>
-           
+      </nav>
+    
+      <ul class="right sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="eventapp.html">Events</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="more.html">About Us</a></li>
+      </ul>
+                   
     <!--------End NavBar Area---------->
     <!--------Start Header Area-------->
         <div class="container">
@@ -51,18 +60,26 @@
         <div class="container">
             <div class="row">
                 <div class="col s5">
-                    <img src="./Assets/eventsorg.jpg" class="img-responsive;" alt="About us" style = "width: 90%">     
+                    <img src="./Assets/eventsorg.jpg" class="img-responsive;" alt="About us" 
+                    style = "width: 90%">     
                 </div>
                 <div class="col s7">
-                    <span class="card-title" style="margin-left: 0px;  font-size: 25px; font-weight: bold;">Let Us Introduce Our App</span>
+                    <span class="card-title" style="margin-left: 0px; font-size: 25px; 
+                        font-weight: bold;">Let Us Introduce Our App</span>
                         <h6 class="para">
-                            In this world of busyness, shortcuts are the way to go.  Our App is one of those shortcuts!  It will help plan your day off, your weekend, or your vacation.  
+                            In this world of busyness, shortcuts are the way to go.  
+                            Our App is one of those shortcuts!  It will help plan your day off, 
+                            your weekend, or your vacation.  
                         </h6>
                         <h6 class="para">
-                            Let's say you want to look for an event based your interests and location.  Our App will work well for you and will give you directions on how to get your destination utilizing MapQuest.
+                            Let's say you want to look for an event based your interests and 
+                            location.  Our App will work well for you and will give you directions 
+                            on how to get your destination utilizing MapQuest.
                         </h6>
                         <h6 class="para">
-                            The application is still under development and will include some additional features which will facilitate and allow users to make their search based on a specific event name and genre type.  
+                            The application is still under development and will include some 
+                            additional features which will facilitate and allow users to make their 
+                            search based on a specific event name and genre type.  
                         </h6>
                 </div>
 
@@ -76,51 +93,66 @@
             <div class="row" id="svcStuff">
                 <div class="container col m3" id="svcBkt">
                 <div class="center-align img">
-                    <img src="./Assets/music2.png" class="cardImg1" alt="services-1" height="50" width="50">
+                    <img src="./Assets/music2.png" class="cardImg1" alt="services-1" 
+                    height="50" width="50">
                 </div>
                 <div class="center-align svcInfo" style="height: 250px;">
                     <span class="svcTitle">Music</span>
-                    <p id="svcBlurb">A concert is a live music performance in front of an audience. The performance may be by a single musician.</p>
-                    <a href="./eventapp.html" class="center-align btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="matIcons">search</i></a>
+                    <p id="svcBlurb">A concert is a live music performance in front 
+                        of an audience. The performance may be by a single musician.</p>
+                    <a href="./eventapp.html" class="center-align btn-floating 
+                        btn-large waves-effect waves-light red"><i class="material-icons" 
+                        id="matIcons">search</i></a>
                 </div>
             </div>
 
             <div class="row" id="svcStuff">
                 <div class="container col m3" id="svcBkt">
                 <div class="center-align img">
-                    <img src="./Assets/sportcon2.png" class="cardImg2" alt="services-1" height="50" width="50">
+                    <img src="./Assets/sportcon2.png" class="cardImg2" alt="services-1" height="50" 
+                        width="50">
                 </div>
                 <div class="center-align svcInfo" style="height: 250px;">
                     <span class="svcTitle">Sports</span>
                     <p id="svcBlurb">A sporting event is any professional or 
                         amateur sport, athletic game, contest, event,
                         or race.</p>
-                        <a href="./eventapp.html" class="center-align btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="matIcons">search</i></a>
+                        <a href="./eventapp.html" class="center-align btn-floating btn-large 
+                            waves-effect waves-light red"><i class="material-icons" id="matIcons">
+                            search</i></a>
                 </div>
             </div>
 
             <div class="row" id="svcStuff">
                 <div class="container col m3" id="svcBkt">
                 <div class="center-align img">
-                    <img src="./Assets/movie2.png" class="cardImg3" alt="services-1" height="50" width="50">
+                    <img src="./Assets/movie2.png" class="cardImg3" alt="services-1" 
+                    height="50" width="50">
                 </div>
                 <div class="center-align svcInfo" style="height: 250px;">
                     <span class="svcTitle">Movies</span>
-                    <p id="svcBlurb">A movie or film event is a blockbuster film whose release itself is considered a major event.</p>
-                        <a href="./eventapp.html" class="center-align btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="matIcons">search</i></a>
+                    <p id="svcBlurb">A movie or film event is a blockbuster film whose 
+                        release itself is considered a major event.</p>
+                        <a href="./eventapp.html" class="center-align btn-floating 
+                            btn-large waves-effect waves-light red"><i class="material-icons" 
+                            id="matIcons">search</i></a>
                 </div>
             </div>
 
             <div class="row" id="svcStuff">
                 <div class="container col m3" id="svcBkt">
                 <div class="center-align img">
-                    <img src="./Assets/education2.png" class="cardImg4" alt="services-1" height="50" width="50">
+                    <img src="./Assets/education2.png" class="cardImg4" alt="services-1" 
+                        height="50" width="50">
                 </div>
                 <div class="center-align svcInfo" style="height: 250px;">
                     <span class="svcTitle">Education</span>
                     <p id="svcBlurb">An educational event will provide professionals
-                        with a targeted and flexible means to advance but is currently not available.</p>
-                        <a href="./eventapp.html" class="center-align btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id="matIcons">search</i></a>
+                        with a targeted and flexible means to advance but is currently 
+                        not available.</p>
+                        <a href="./eventapp.html" class="center-align btn-floating 
+                            btn-large waves-effect waves-light red"><i class="material-icons" 
+                            id="matIcons">search</i></a>
                 </div>
                 </div>
             </div> 
@@ -132,22 +164,31 @@
             <footer class="page-footer N/A transparent">
                 <div class="container col s12">
                     <div class="col s12 center-align">
-                      <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventFoot center-align" style="padding-bottom: 10px;"></a>
-                      <p class="black-text text-lighten-4 center-align" style="margin: 0px; padding-bottom: 5px; font-weight: bold;">FOLLOW US</p>
+                      <a href="#"><img src="./Assets/logo.png" height="40" width="100" 
+                        alt="logo" class="eventFoot center-align" style="padding-bottom: 10px;"></a>
+                      <p class="black-text text-lighten-4 center-align" style="margin: 0px; 
+                        padding-bottom: 5px; font-weight: bold;">FOLLOW US</p>
                     </div>
                     <div class="container col s12">
-                        <div class="row center-align" style="margin: 0px; font-size: 16px; font-weight: bold;" id="socLinks">
-                                <a href="https://www.facebook.com/"><i class="fab fa-facebook" id="ftrIcon"></i> &nbsp; &nbsp; </a>
-                                <a href="https://www.youtube.com/"><i class="fab fa-youtube" id="ftrIcon"></i> &nbsp; &nbsp; </a>
-                                <a href="https://instagram.com/"><i class="fab fa-instagram" id="ftrIcon"></i> &nbsp; &nbsp; </a>
-                                <a href="https://twitter.com/"><i class="fab fa-twitter" id="ftrIcon"></i> &nbsp; &nbsp; </a>
-                                <a href="https://linkedin.com/"><i class="fab fa-linkedin" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                        <div class="row center-align" style="margin: 0px; font-size: 16px; 
+                            font-weight: bold;" id="socLinks">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook" 
+                                    id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                                <a href="https://www.youtube.com/"><i class="fab fa-youtube" 
+                                    id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                                <a href="https://instagram.com/"><i class="fab fa-instagram" 
+                                    id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter" 
+                                    id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                                <a href="https://linkedin.com/"><i class="fab fa-linkedin" 
+                                    id="ftrIcon"></i> &nbsp; &nbsp; </a>
                         </div>
                     </div>
                 </div>
                 <div class="footer-copyright">
-                    <div class="container center-align" id="ftrCpy"style="width: 100%; color: black; padding: 0px;">
-                        Copyright ©2020 All rights reserved | This is my Project-1
+                    <div class="container center-align" id="ftrCpy"style="width: 100%; 
+                        color: black; padding: 0px;">Copyright ©2020 All rights reserved | 
+                        This is my Project-1
                         <a href="#"><span style="color: black">Team-3</span></a>
                     </div>
                 </div>
@@ -158,8 +199,10 @@
                    
     <!--------Script Links------------>
         
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src= "script.js"></script>
         <script type="text/javascript" src="./materialize.js"></script>
         
