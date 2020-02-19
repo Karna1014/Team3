@@ -1,5 +1,7 @@
 
-
+$(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
 
 
 function myFunction1() {
