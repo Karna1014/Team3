@@ -4,6 +4,28 @@ background-image: url('./Assets/bodyback.png');
 background-size: cover;
 }
 
+Begin Navigation */
+
+  .nav-wrapper {
+    background-color: #3f51b5
+  }
+  .sidenav {
+    background-color: #3f51b5;
+    width: 200px;
+  }
+  .sidenav li > a {
+    color: #ffffff;
+    font-size: 20px;
+    width: 200px;
+  }
+  .navbar-fixed {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+/* End Navigation */
+
+
 #devTitle {
     font-size: 22px;
 }

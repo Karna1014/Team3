@@ -18,7 +18,20 @@ h1 {
     color: rgb(241, 11, 11);
    
   } 
-  
+/* Begin Navigation */
+
+  .nav-wrapper {
+    background-color: #3f51b5
+  }
+  .sidenav {
+    background-color: #3f51b5;
+    width: 200px;
+  }
+  .sidenav li > a {
+    color: #ffffff;
+    font-size: 20px;
+    width: 200px;
+  }
   .navbar-fixed {
     margin-top: 0;
     padding-top: 0;

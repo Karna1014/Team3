@@ -21,68 +21,96 @@
 </head>
 <body>
     <!--------Start NavBar Area-------->
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper nav #3f51b5 indigo nav z-depth-5">
-          <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventNav" style="margin: 10px;"></a>
-            <ul id="nav-mobile" class="right logonav" style="float: right; font-size: 18px; font-weight: bold">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="eventapp.html">Events</a></li>
-                <li><a href="faq.html">Faq</a></li>
-                <li><a href="more.html">About Us</a></li>
-            </ul>
-        </div>
-      </nav>
-    </div>
+    <nav>
+      <div class="nav-wrapper" style="background-color: #3f51b5;">
+        <a href="#!"><img src="./Assets/logo.png" height="40" width="100" alt"logo" 
+          class="brand-logo" style="margin: 10px;"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=
+          "material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down" id="nav-mobile" style="font-size: 18px;
+         font-weight: bold">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="eventapp.html">Events</a></li>
+          <li><a href="faq.html">Faq</a></li>
+          <li><a href="more.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <ul class="right sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="eventapp.html">Events</a></li>
+      <li><a href="faq.html">Faq</a></li>
+      <li><a href="more.html">About Us</a></li>
+    </ul>
     <!--------End NavBar Area-------->
     <!---Dropdown Structure-Question/Answer--->
     <div class="main-container">
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark"></i>What is EventHub?</div>  
-          <div class="collapsible-body"><span>EventHub is a global platform for live experiences that allows anyone to create, 
-            share, find and attend events that fuel their passions and enrich their lives. Events are a great opportunity for people to come together and share experiences.</span></div>
+          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark">
+            </i>What is EventHub?</div>  
+          <div class="collapsible-body"><span>EventHub is a global platform for live 
+            experiences that allows anyone to create, share, find and attend events that
+            fuel their passions and enrich their lives. Events are a great opportunity 
+            for people to come together and share experiences.</span></div>
         </li>
       </ul>
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark"></i>What API's are we using for this application?</div>
-          <div class="collapsible-body"><span>We are using Ticketmaster API to get the data about the events where user can search
-            for events based on the city. We are also using MapQuest API where user can see the searched location on a map and determine how long it will take to get to the desired venue.</span></div>
+          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark">
+            </i>What API's are we using for this application?</div>
+          <div class="collapsible-body"><span>We are using Ticketmaster API to get the
+            data about the events where user can search for events based on the city. 
+            We are also using MapQuest API where user can see the searched location on a 
+            map and determine how long it will take to get to the desired venue.</span></div>
         </li>
       </ul>  
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark"></i>Is it free to use this App?</div>
-          <div class="collapsible-body"><span>This app is free to use but it is still in developmental stage.  As development progresses fees may apply for 
-            some of the services that can facilitate the users in terms of selling tickets and funding etc.</span></div>
+          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark">
+            </i>Is it free to use this App?</div>
+          <div class="collapsible-body"><span>This app is free to use but it is still 
+            in developmental stage.  As development progresses fees may apply for some 
+            of the services that can facilitate the users in terms of selling tickets and 
+            funding etc.</span></div>
         </li>
       </ul>  
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark"></i>What programming languages are used to code this application?</div>
-          <div class="collapsible-body"><span>This app is been coded in Javascript, HTML5, CSS using client side server api's and third party
-            server api's. Examples are JQuery and Ajax. We are still developing a map using google API so the
-            user can see the venue location.</span></div>
+          <div class="collapsible-header"><i class="far fa-question-circle" 
+            id="qMark"></i>What programming languages are used to code this 
+            application?</div>
+          <div class="collapsible-body"><span>This app is been coded in Javascript, 
+            HTML5, CSS using client side server api's and third party
+            server api's. Examples are JQuery and Ajax. We are still developing a map 
+            using google API so the user can see the venue location.</span></div>
         </li>
       </ul>  
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark"></i>I like music, can I search for different events?</div>
-          <div class="collapsible-body"><span>Yes you can search for many types of events. We are providing a variety of
-            events and dependent on user input - what interests them most - in a desired city.</span></div>
+          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark">
+            </i>I like music, can I search for different events?</div>
+          <div class="collapsible-body"><span>Yes you can search for many types of events. 
+            We are providing a variety of events and dependent on user input - what 
+            interests them most - in a desired city.</span></div>
         </li>
       </ul>  
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark"></i>What is MapQuest API?</div>
-          <div class="collapsible-body"><span>We are using MapQuest API so user can see the location through map an additional info.</span></div>
+          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark">
+            </i>What is MapQuest API?</div>
+          <div class="collapsible-body"><span>We are using MapQuest API so user can see
+            the location through map an additional info.</span></div>
         </li>
       </ul>  
       <ul class="collapsible">
         <li>
-          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark"></i>Are you storing my data?</div>
-          <div class="collapsible-body"><span>At this time, there is no logIn required to utilize the App.  We do not request any personal information.  We do provide each user a search history and make it readily accessible to them.</span></div>
+          <div class="collapsible-header"><i class="far fa-question-circle" id="qMark">
+            </i>Are you storing my data?</div>
+          <div class="collapsible-body"><span>At this time, there is no logIn required
+            to utilize the App.  We do not request any personal information.  We do 
+            provide each user a search history and make it readily accessible to them.</span></div>
         </li>
       </ul>     
     </div>  
@@ -93,16 +121,24 @@
     <footer class="page-footer N/A transparent">
       <div class="container col s12">
           <div class="col s12 center-align">
-            <a href="#"><img src="./Assets/logo.png" height="40" width="100" alt="logo" class="eventFoot center-align" style="padding: 0px;"></a>
-            <p class="black-text text-lighten-4 center-align" style="margin: 0px; font-weight: bold;">FOLLOW US</p>
+            <a href="#"><img src="./Assets/logo.png" height="40" width="100" 
+              alt="logo" class="eventFoot center-align" style="padding: 0px;"></a>
+            <p class="black-text text-lighten-4 center-align" style="margin: 0px; 
+              font-weight: bold;">FOLLOW US</p>
           </div>
           <div class="container col s12">
-              <div class="row center-align" style="margin: 0px; font-size: 16px; font-weight: bold;" id="socLinks">
-                      <a href="https://www.facebook.com/"><i class="fab fa-facebook" id="ftrIcon"></i> &nbsp; &nbsp; </a>
-                      <a href="https://www.youtube.com/"><i class="fab fa-youtube" id="ftrIcon"></i> &nbsp; &nbsp; </a>
-                      <a href="https://instagram.com/"><i class="fab fa-instagram" id="ftrIcon"></i> &nbsp; &nbsp; </a>
-                      <a href="https://twitter.com/"><i class="fab fa-twitter" id="ftrIcon"></i> &nbsp; &nbsp; </a>
-                      <a href="https://linkedin.com/"><i class="fab fa-linkedin" id="ftrIcon"></i> &nbsp; &nbsp; </a>
+              <div class="row center-align" style="margin: 0px; font-size: 16px; 
+                font-weight: bold;" id="socLinks">
+                      <a href="https://www.facebook.com/"><i class="fab fa-facebook" 
+                        id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                      <a href="https://www.youtube.com/"><i class="fab fa-youtube" 
+                        id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                      <a href="https://instagram.com/"><i class="fab fa-instagram" 
+                        id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                      <a href="https://twitter.com/"><i class="fab fa-twitter" 
+                        id="ftrIcon"></i> &nbsp; &nbsp; </a>
+                      <a href="https://linkedin.com/"><i class="fab fa-linkedin" 
+                        id="ftrIcon"></i> &nbsp; &nbsp; </a>
               </div>
           </div>
       </div>
@@ -115,13 +151,17 @@
     </footer>              
     <!-------End of the Footer----------------->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+      </script>  
     <script type="text/javascript" src="./materialize.js"></script>
     <!--------Script for collapse activation----->
     <script>
     $(document).ready(function(){
+      //Responsive collapse of Navbar
+      $('.sidenav').sidenav();
       $('.collapsible').collapsible();
     });
+    
   </script>
     
 </body>
